@@ -2,6 +2,8 @@
 """
 
 from typing import List, Callable
+from coreli.base_conversion_routines import *
+
 
 def T0(x: int) -> int:
     return x//2
@@ -47,6 +49,21 @@ def CS(x: int, stopping_criterion: Callable[[int,int], bool] = lambda x,n: x == 
         cs.append(T(cs[-1]))
         n += 1
     return cs
+
+def CS_bin(x_bin: int, stopping_criterion: Callable[[str,int], bool] = None) -> List[str]:
+    """ Gives Collatz Sequences in binary. The default stopping criterion is to run as \
+        many steps as bits in `x_bin`.
+
+        :Example:
+            >>> CS_bin('11')
+            ['11', '101', '1000']
+            >>> CS_bin('110011001')
+            ['110011001', '1001100110', '100110011', '111001101', '1010110100', '101011010', '10101101', '100000100', '10000010', '1000001']
+
+    """
+    if stopping_criterion == None:
+        stopping_criterion = lambda x_bin_curr, n: n == len(x_bin)
+    return list(map(int_to_binary, CS(binary_to_int(x_bin), stopping_criterion)))
 
 def is_admissible(action: int, x: int) -> bool:
     """ Determine whether the `action` (0 or 1 corresponding to T0 or T1) is feasible\

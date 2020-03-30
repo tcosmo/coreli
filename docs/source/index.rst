@@ -1,6 +1,12 @@
 Welcome to coreli's documentation!
 ==================================
 
+Coreli is the **Collatz Research Library**.
+
+coreli.base_conversion_routines
+===============================
+.. automodule:: coreli.base_conversion_routines
+    :members:
 
 coreli.routines
 ===============

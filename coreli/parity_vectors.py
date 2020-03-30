@@ -114,7 +114,7 @@ class Parvec(object):
         a parity vector to be the binary representation of the smallest integer which is\
             admissible for that parity vector.
         """
-        pass
+        return ''
 
 class CompactRep(object):
     """ Represents the compact representation of a parity vector, called *feasible vector* in Wirsching.
