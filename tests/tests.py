@@ -1,5 +1,5 @@
 import unittest
-from coreli.routines import *
+from coreli import *
 
 
 class TestRoutines(unittest.TestCase):
