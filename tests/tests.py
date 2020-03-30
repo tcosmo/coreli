@@ -12,3 +12,9 @@ class TestParvec(unittest.TestCase):
         self.assertRaises(ValueError, lambda: Parvec([0,1,2,0,1]))
         self.assertEqual(pv.norm, 5)
         self.assertEqual(pv.span,3)
+
+class TestBaseConversion(unittest.TestCase):
+    def test_int_to_binary(self):
+        self.assertEqual(int_to_binary(3), '11')
+        self.assertEqual(int_to_binary(3,5), '00011')
+        self.assertRaises(ValueError, lambda: int_to_binary(3,1))

@@ -1,13 +1,22 @@
 """ Contains helper functions for base conversion.
 """
-def int_to_binary(x: int) -> str:
-    """ Standard binary representation of numbers.
+def int_to_binary(x: int, n_bits: int = None) -> str:
+    """ Standard binary representation of numbers. You can specify the number of bits\
+        of the outputed string (leading 0s will be inserted).
 
         :Example:
             >>> int_to_binary(10)
             '1010'
+            >>> int_to_binary(10,5)
+            '01010'
     """
-    return bin(x)[2:]
+    x_bin = bin(x)[2:]
+    if n_bits is None:
+        return x_bin
+
+    if n_bits < len(x_bin):
+        raise ValueError('Cannot write {} (`{}`) on {} bits'.format(x,x_bin,n_bits))
+    return '0'*(n_bits-len(x_bin))+x_bin
 
 def binary_to_int(x_bin: str) -> int:
     """ Inverse of `int_to_binary`.

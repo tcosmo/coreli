@@ -1,7 +1,7 @@
 Welcome to coreli's documentation!
 ==================================
 
-Coreli is the **Collatz Research Library**.
+Coreli is the `Collatz Research Library <https://github.com/tcosmo/coreli>`_.
 
 coreli.base_conversion_routines
 ===============================

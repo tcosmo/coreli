@@ -4,6 +4,7 @@ For more information on these concepts please refer to "G. J. Wirsching. *The dy
 York, 1998.", Chapter 2.
 """
 from typing import List, Callable
+from coreli.base_conversion_routines import *
 import coreli.routines as routines
 import coreli.modular_routines as modular_routines
 
@@ -110,11 +111,19 @@ class Parvec(object):
         return routines.CS(alpha_i, lambda x,n: n == self.norm)
 
     def get_Collatz_encoding(self) -> str:
-        """ In `https://arxiv.org/abs/1907.00775` we define the Collatz encoding of \
+        """ In `https://arxiv.org/abs/1907.00775\
+                 <https://arxiv.org/abs/1907.00775>`_ we define the Collatz encoding of \
         a parity vector to be the binary representation of the smallest integer which is\
             admissible for that parity vector.
+
+            :Example:
+                >>> Parvec([1,0,1,1,1,0]).get_Collatz_encoding()
+                '001001'
+                >>> Parvec([1,0,0]).get_Collatz_encoding()
+                '101'
         """
-        return ''
+        alpha0 = self.get_first_occurrence()[0] 
+        return int_to_binary(alpha0,self.norm)
 
 class CompactRep(object):
     """ Represents the compact representation of a parity vector, called *feasible vector* in Wirsching.
