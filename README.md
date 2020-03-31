@@ -12,7 +12,12 @@ The **Collatz Conjecture**, unresolved since the 60s, states that, no matter whi
 
 The appararent simplicity of this problem hides a very difficult mathematical problem. Actually, we believe that this problem has a lot to do with **Computer Science**. That's why we created **Coreli**, a library for experimenting and testing hypothesises regarding the Collatz process.      
 
-The features of **Coreli** are based on research which is listed below. Please browse the `example` folder to get an idea of what you can do with it.
+The features of **Coreli** are based on research which is listed below. Please browse the `examples` folder to get an idea of what you can do with it.
+
+# Examples
+## Please Read This First
+
+If you want to play with the notebooks presented in `examples` (as you are very encouraged to do), please copy them in the folder `examples_safe` before doing anything and make your tests from those copies. The folder `examples_safe` is not under version control hence, you won't encounter annoying problems when you pull future versions of coreli.
 
 # Doc
 
