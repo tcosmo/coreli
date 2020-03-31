@@ -34,3 +34,27 @@ class TestBaseConversion(unittest.TestCase):
         self.assertEqual(int_to_binary(3), '11')
         self.assertEqual(int_to_binary(3,5), '00011')
         self.assertRaises(ValueError, lambda: int_to_binary(3,1))
+
+
+class TestPredecessors(unittest.TestCase):
+    def test_construct_tree(self):
+        tree = SpanPredRegularTree(8,3)
+        print()
+        tree.pprint_branches(print_root_once=True)
+
+        tree = SpanPredRegularTree(8,0)
+        print()
+        tree.pprint_branches(print_root_once=True)
+
+    def test_nb_branches(self):
+        tree = SpanPredRegularTree(8,3)
+        tree.extract_branches()
+        self.assertEqual(tree.nb_branches, len(tree.branches))
+
+        tree2 = SpanPredRegularTree(13,5)
+        tree2.extract_branches()
+        self.assertEqual(tree2.nb_branches, len(tree2.branches))
+
+        tree2 = SpanPredRegularTree(3,3)
+        tree2.extract_branches()
+        self.assertEqual(tree2.nb_branches, len(tree2.branches))

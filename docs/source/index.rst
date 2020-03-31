@@ -25,6 +25,12 @@ coreli.parity_vectors
 .. automodule:: coreli.parity_vectors
     :members:
 
+coreli.predecessors
+=======================
+
+.. automodule:: coreli.predecessors
+    :members:
+
 
 .. toctree::
    :maxdepth: 2

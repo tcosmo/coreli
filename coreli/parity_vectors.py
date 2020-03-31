@@ -11,8 +11,8 @@ import coreli.modular_routines as modular_routines
 
 class Parvec(object):
     """ Represents a parity vector. A parity vector is a list of 0s and 1s (called `arrows`) representing\
-         whether T0 or T1 was used during a finite Collatz trajectory. A parity vector of\
-              length :math:`n` corresponds to a Collatz trajectory of length :math:`n+1`.
+        whether T0 or T1 was used during a finite Collatz trajectory. A parity vector of\
+        length :math:`n` corresponds to a Collatz trajectory of length :math:`n+1`.
               
         For instance the trajectory `[3, 5, 8, 4, 2]` is associated to the parity vector `[1, 1, 0, 0]`.
 
@@ -217,5 +217,3 @@ class CompactRep(object):
     def span(self) -> int:
         """ Returns the span of the associated parity vector"""
         return len(self.compact)-1
-
-#def cs_to_parvec()

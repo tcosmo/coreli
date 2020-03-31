@@ -1,6 +1,5 @@
 """ Contains the most fundamental routines needed when working with the Collatz process.
 """
-
 from typing import List, Callable
 from coreli.base_conversion_routines import *
 
