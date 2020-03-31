@@ -1,3 +1,4 @@
+examples_safe/*
 deploy_doc.sh
 venv-coreli
 # Byte-compiled / optimized / DLL files
