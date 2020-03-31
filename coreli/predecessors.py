@@ -3,6 +3,7 @@
     that these sets can be partionned in **Regular Languages**.\
     We provide the tools to construct the associated regular expressions.
 """
+import random
 import enum
 import copy
 from typing import List, Callable, Tuple
@@ -55,6 +56,30 @@ class SpanPredNode(object):
         
         return construct_root(0) 
 
+    def sample_chain(self, kleene_choice: Tuple[int]) -> str:
+        """ Sample a regular expression chain tree using Kleene star\
+            as per number given by `kleene_choice`.
+        """
+        current_sample = ''
+        new_kleene_choice = kleene_choice
+        if self.node_type == SpanPredNodeType.KLEENE:
+            if len(kleene_choice) == 0:
+                raise ValueError('There are more Kleene star in {}'.format(self.simpler_str())\
+                                  +'than given by `kleene_choice`')
+            current_choice = kleene_choice[0]
+            current_sample += self.str_value*current_choice
+            new_kleene_choice = kleene_choice[1:]
+        else:
+            current_sample += self.str_value
+        
+        if len(self.children) == 0:
+            return current_sample
+
+        if len(self.children) > 1:
+            raise ValueError('Can only operate on a chain tree. If you have a'\
+                              +'non chain tree please operate on branches.')
+
+        return current_sample + self.children[0].sample_chain(new_kleene_choice)
 
     def __str__(self):
         
@@ -137,9 +162,9 @@ class SpanPredRegularTree(object):
 
     @staticmethod
     def parity_string(x: int, y: int, k: int, n_cycle: int = 0) -> str:
-        """ For :math:`x` and :math:`y`, elements of Z/3^kZ, the function computes\
-            the parities of all elements of the form 2^{-i}*x until y is reached\
-            `n_cycle`+1 times (excluded).
+        """ For :math:`x` and :math:`y`, elements of Z/3^kZ the function computes\
+            the parities of all elements of the form\
+            :math:`2^{-i}*x` until :math:`y` is reached `n_cycle+1` times (excluded).
         """
         if (x%3)*(y%3) == 0:
             raise ValueError('{} or {} is a multiple of three!'.format(x,y))
@@ -206,9 +231,30 @@ class SpanPredRegularTree(object):
 
         return kleene_node
 
+
+    def get_random_samples(self, n_samples:int = 1, max_kleene:int = 3) -> str:
+        """ Returns random samples of strings matching the tree's regexp.
+        
+            Args:
+                n_samples (int): number of samples to generate
+                max_kleene (int): number of maximum application of kleene star
+                in samples
+        """
+        to_return = []
+        self.extract_branches()
+
+        for _ in range(n_samples):
+            i_branch = random.randint(0,self.nb_branches-1)
+            kleene_choice = tuple(random.randint(0,max_kleene) for _ in range(self.k+1))
+            to_return.append(self.branches[i_branch].sample_chain(kleene_choice))
+
+        return to_return
+
     def extract_branches(self) -> None:
         """ Return the list of all the tree's branches.
         """
+        if not self.branches is None:
+            return
         self.branches = []
         def explore_branch(curr_node: 'SpanPredNode', 
                            curr_branch: List['SpanPredNode']) -> None:
@@ -235,8 +281,7 @@ class SpanPredRegularTree(object):
                 computed is not necessarily the most convenient to work with. There is\
                 a custom order which is simpler to read and this boolean implements it.
         """
-        if self.branches is None:
-            self.extract_branches()
+        self.extract_branches()
 
         if print_root_once:
             print(self.branches[0].simpler_str(only_me=True))

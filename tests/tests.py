@@ -38,23 +38,20 @@ class TestBaseConversion(unittest.TestCase):
 
 class TestPredecessors(unittest.TestCase):
     def test_construct_tree(self):
-        tree = SpanPredRegularTree(8,3)
-        print()
-        tree.pprint_branches(print_root_once=True)
-
-        tree = SpanPredRegularTree(8,0)
-        print()
-        tree.pprint_branches(print_root_once=True)
+        to_test = [(8,3), (8,2), (8,4), (13,5), (25,2), (13,2), (3,4)]
+        for x,k in to_test:
+            tree = SpanPredRegularTree(x,k)
+            where_to_stop = x//(3**k)
+            random_samples = tree.get_random_samples(10)
+            for sample in random_samples:
+                if sample == '':
+                    continue
+                self.assertEqual(CS_bin(sample)[-1-where_to_stop], 
+                                 int_to_binary(x))
 
     def test_nb_branches(self):
-        tree = SpanPredRegularTree(8,3)
-        tree.extract_branches()
-        self.assertEqual(tree.nb_branches, len(tree.branches))
-
-        tree2 = SpanPredRegularTree(13,5)
-        tree2.extract_branches()
-        self.assertEqual(tree2.nb_branches, len(tree2.branches))
-
-        tree2 = SpanPredRegularTree(3,3)
-        tree2.extract_branches()
-        self.assertEqual(tree2.nb_branches, len(tree2.branches))
+        to_test = [(8,3), (13,5), (3,3)]
+        for x,k in to_test:
+            tree = SpanPredRegularTree(x,k)
+            tree.extract_branches()
+            self.assertEqual(tree.nb_branches, len(tree.branches))
