@@ -13,6 +13,22 @@ class TestParvec(unittest.TestCase):
         self.assertEqual(pv.norm, 5)
         self.assertEqual(pv.span,3)
 
+    def test_to_compact(self):
+        pvs = Parvec.get_random_parvec(100,100)
+        for pv in pvs:
+            compact = pv.to_compact()
+            self.assertListEqual(pv.parvec, compact.to_parvec().parvec)
+            self.assertEqual(pv.norm,compact.norm)
+            self.assertEqual(pv.span,compact.span)
+
+    def test_to_parvec(self):
+        compacts = CompactRep.get_random_compact(100,100)
+        for compact in compacts:
+            pv = compact.to_parvec()
+            self.assertListEqual(compact.compact, pv.to_compact().compact)
+            self.assertEqual(pv.norm,compact.norm)
+            self.assertEqual(pv.span,compact.span)
+
 class TestBaseConversion(unittest.TestCase):
     def test_int_to_binary(self):
         self.assertEqual(int_to_binary(3), '11')
