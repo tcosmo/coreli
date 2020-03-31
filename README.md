@@ -17,7 +17,9 @@ The features of **Coreli** are based on research which is listed below. Please b
 # Examples
 ## Please Read This First
 
-If you want to play with the notebooks presented in `examples` (as you are very encouraged to do), please copy them in the folder `examples_safe` before doing anything and make your tests from those copies. The folder `examples_safe` is not under version control hence, you won't encounter annoying problems when you pull future versions of coreli.
+If you want to play with the notebooks presented in `examples` (as you are very encouraged to do), please copy them in the folder `examples_safe` before doing anything and run those copied notebooks instead. 
+
+Indeed, the folder `examples_safe` is not under version control hence, you won't encounter annoying problems when you pull future versions of coreli.
 
 # Doc
 
