@@ -1,6 +1,6 @@
 # Coreli
 
-Coreli stand for "Collatz Research Library".               
+Coreli stand for "Collatz Research Library". Any similarity to [Archangelo Corelli](https://www.youtube.com/watch?v=5BPhkY6xIP8) is purely coincidental.      
 
 The Collatz process is a very simple to describre: take any number $x$, if even do $x/2$ if odd do $(3x+1)/2$. Repeat.   
 
