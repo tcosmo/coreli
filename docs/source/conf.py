@@ -18,8 +18,8 @@ sys.path.insert(0, os.path.abspath('../..'))
 # -- Project information -----------------------------------------------------
 
 project = 'Coreli'
-copyright = '2020, Tristan Stérin'
-author = 'Tristan Stérin'
+copyright = u'2020, Tristan Stérin'
+author = u'Tristan Stérin'
 
 
 # -- General configuration ---------------------------------------------------

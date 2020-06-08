@@ -31,6 +31,17 @@ coreli.predecessors
 .. automodule:: coreli.predecessors
     :members:
 
+coreli.padic_routines
+=======================
+
+.. automodule:: coreli.padic_routines
+    :members:
+
+coreli.cycles
+=======================
+
+.. automodule:: coreli.cycles
+    :members:
 
 .. toctree::
    :maxdepth: 2

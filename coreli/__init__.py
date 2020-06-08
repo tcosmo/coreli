@@ -3,3 +3,5 @@ from coreli.routines import *
 from coreli.modular_routines import *
 from coreli.parity_vectors import *
 from coreli.predecessors import *
+from coreli.padic_routines import *
+from coreli.cycles import *

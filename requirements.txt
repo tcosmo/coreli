@@ -2,7 +2,9 @@ alabaster==0.7.12
 Babel==2.8.0
 certifi==2019.11.28
 chardet==3.0.4
+cypari==2.4.0
 docutils==0.16
+future==0.18.2
 idna==2.9
 imagesize==1.2.0
 Jinja2==2.11.1
@@ -15,6 +17,7 @@ requests==2.23.0
 six==1.14.0
 snowballstemmer==2.0.0
 Sphinx==2.4.4
+sphinx-rtd-theme==0.4.3
 sphinxcontrib-applehelp==1.0.2
 sphinxcontrib-devhelp==1.0.2
 sphinxcontrib-htmlhelp==1.0.3
