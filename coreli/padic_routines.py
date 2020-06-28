@@ -34,28 +34,28 @@ def rational_p_adic_to_Q(p, initial_segment, period):
                                                  value_period,padic_fraction)
     return cypari.pari(formula_str)
     
-def Collatz_2_adic(segment_init, period):
-    """ Returns the Collatz sequence (until cycle) of the 2-adic number 
+def Collatz_rational_2_adic(segment_init, period):
+    """ Returns the Collatz sequence (until cycle) of the rational 2-adic number 
     given by its initial segment and period. The function also returns the closest
     element to 0 in the cycle that is reached.
 
     :Example:
-        >>> Collatz_2_adic('1','10')
+        >>> Collatz_rational_2_adic('1','10')
         ([1/3, 1, 2, 1], 1)
 
-        >>> Collatz_2_adic('01','01')
+        >>> Collatz_rational_2_adic('01','01')
         ([-2/3, -1/3, 0, 0], 0)
 
-        >>> Collatz_2_adic('0111','01')
+        >>> Collatz_rational_2_adic('0111','01')
         ([10/3, 5/3, 3, 5, 8, 4, 2, 1, 2], 1)
 
-        >>> Collatz_2_adic('1','011')
+        >>> Collatz_rational_2_adic('1','011')
         ([-5/7, -4/7, -2/7, -1/7, 2/7, 1/7, 5/7, 11/7, 20/7, 10/7, 5/7], 5/7)
 
-        >>> Collatz_2_adic('1011','1')
+        >>> Collatz_rational_2_adic('1011','1')
         ([-3, -4, -2, -1, -1], -1)
 
-        >>> Collatz_2_adic('101101','1')
+        >>> Collatz_rational_2_adic('101101','1')
         ([-19, -28, -14, -7, -10, -5, -7], -5)
     """
     rational_2adic = rational_p_adic_to_Q(2,segment_init,period)
