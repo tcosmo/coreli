@@ -22,7 +22,7 @@ use `coreli` to generate the regular expression generating Collatz ancestors at 
 
 ## Running the Collatz process on 2-adic integers
 
-The notebook `examples/Collatz 2-adic and rational cycles.ipynb` shows how to use `coreli` to run the Collatz process in its generalisation to numbers with infinite binary expansion (2-adic integers). See [Lagarias 1985] or [Parity sequences of the 3x+1 map on the 2-adic integers and Euclidean embedding](https://arxiv.org/abs/1805.00133) for more details.
+The notebook `examples/Collatz 2-adic and rational cycles.ipynb` shows how to use `coreli` to run the Collatz process in its generalisation to numbers with infinite binary expansion (2-adic integers). See [Lagarias 1985] or Olivier Rozier's [Parity sequences of the 3x+1 map on the 2-adic integers and Euclidean embedding](https://arxiv.org/abs/1805.00133) for more details.
 
 ## Important note
 
