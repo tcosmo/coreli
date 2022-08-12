@@ -1,0 +1,53 @@
+from typing import List, Union
+
+
+def list_int_to_list_str(l: List[int]) -> List[str]:
+    """Converts each int of a list to a str.
+
+    :Example:
+        >>> list_int_to_list_str([1,1,0,1])
+        ['1', '1', '0', '1']
+        >>> list_int_to_list_str([5,12,31,7])
+        ['5', '12', '31', '7']
+    """
+    return list(map(lambda x: str(x), l))
+
+
+def to_base_b(x: int, base: int, to_str: bool = True) -> Union[str, List[int]]:
+    """Converts a non-negative integer to its base representation.
+    Note that in the list representation, the least significant digit comes first whereas,
+    in the string representation, the least significant digit comes last.
+
+    Args:
+            x (int): the positive integer to convert
+            base (int): the target base
+            to_str (bool): whether the result is given as a string or a list of digits
+
+    :Example:
+        >>> to_base_b(13,2)
+        '1101'
+        >>> to_base_b(13,2,to_str=False)
+        [1, 0, 1, 1]
+        >>> to_base_b(313,5)
+        '2223'
+        >>> to_base_b(313,5,to_str=False)
+        [3, 2, 2, 2]
+        >>> to_base_b(0,87)
+        '0'
+    """
+
+    if x < 0:
+        raise ValueError(f"Input to base-{base} conversion is negative: {x}")
+
+    digits = []
+    while x != 0:
+        digits.append(x % base)
+        x //= base
+
+    if len(digits) == 0:
+        digits = [0]
+
+    if not to_str:
+        return digits
+
+    return "".join(list_int_to_list_str(digits)[::-1])
