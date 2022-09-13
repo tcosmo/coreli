@@ -9,16 +9,60 @@ Implementing p-adic integers.
 """
 
 from typing import Callable, List, Union
-from coreli.utils import list_int_to_list_str, to_base_b
+import functools
+from coreli.utils import list_int_to_list_str, int_to_base
 
-ZERO_DIGIT_FUNCTION = lambda n: 0
+
+class Padic(object):
+    """Wrapper around p-adic integers with p fixed, i.e. it represents the field Zp.
+
+    :Example:
+    >>> Z2 = Padic(2)
+    >>> x = Z2(digit_function = lambda n: n%2)
+
+    """
+
+    def __init__(self, p: int):
+        self.p = p
+
+    def __call__(self, digit_function: Callable[[int], int]):
+        return PadicInt(self.p, digit_function)
+
+    def from_int(self, x: int) -> "PadicInt":
+        """Constructs a p-adic integer from an integer.
+
+        :Example:
+        >>> Z2 = Padic(2)
+        >>> Z2.from_int(25).to_str(10)
+        '...0000011001'
+        >>> Z2.from_int(-4).to_str(20)
+        '...11111111111111111100'
+        >>> Z3 = Padic(3)
+        >>> Z3.from_int(-10).to_str(10)
+        '...2222222122'
+        """
+
+        digits = int_to_base(abs(x), self.p, False)
+        if x >= 0:
+            digit_function = lambda n: 0 if n >= len(digits) else digits[n]
+            return PadicInt(self.p, digit_function)
+
+        new_digits = [self.p - d - 1 for d in digits]
+
+        digit_function = (
+            lambda n: self.p - 1 if n >= len(digits) else new_digits[n]
+        )
+
+        return PadicInt(self.p, digit_function) + 1
 
 
 class PadicInt(object):
+    default_str_precision = 10  # Default number of digits used by __str__
+
     def __init__(
         self,
         p: int,
-        digit_function: Callable[[int], int] = ZERO_DIGIT_FUNCTION,
+        digit_function: Callable[[int], int] = lambda n: 0,
     ):
         """Constructs a p-adic integer.
         Args:
@@ -28,31 +72,6 @@ class PadicInt(object):
         """
         self.p: int = p
         self.digit_function: Callable[[int], int] = digit_function
-
-    @staticmethod
-    def from_int(p: int, x: int) -> "PadicInt":
-        """Constructs a p-adic integer from an integer.
-
-        Note: have to use str() in below example because of bug in python doctest with '...' in output.
-        :Example:
-        >>> str(PadicInt.from_int(2,25))
-        '...0000011001'
-        >>> str(PadicInt.from_int(2,-4))
-        '...1111111100'
-        >>> str(PadicInt.from_int(3,-10))
-        '...2222222122'
-        """
-
-        digits = to_base_b(abs(x), p, False)
-        if x >= 0:
-            digit_function = lambda n: 0 if n >= len(digits) else digits[n]
-            return PadicInt(p, digit_function)
-
-        new_digits = [p - d - 1 for d in digits]
-
-        digit_function = lambda n: p - 1 if n >= len(digits) else new_digits[n]
-
-        return PadicInt(p, digit_function) + 1
 
     def digits(self, n: int) -> List[int]:
         """Returns the first n digits of the number. Raises a value error if a digit is >= p."""
@@ -70,24 +89,36 @@ class PadicInt(object):
 
     def __str__(self) -> str:
         """By default, we show 10 digits."""
-        return self.to_str(10)
+        return self.to_str(self.default_str_precision)
 
     def __repr__(self) -> str:
         return str(self)
 
-    # TODO: optimise (memoise sum,carry) and test
     def __add__(self, other: Union["PadicInt", int]) -> "PadicInt":
-        """Computes p-adic addition."""
+        """Computes p-adic addition.
+
+        :Example:
+        >>> Z2 = Padic(2)
+        >>> x = Z2.from_int(25)
+        >>> y = Z2.from_int(47)
+        >>> (x + y).to_str(10)
+        '...0001001000'
+        >>> z = Z2(digit_function = lambda n: n%2)
+        >>> (z + z + x).to_str(20)
+        '...01010101010101101101'
+
+        """
 
         # Convert to p-adic if given an int
         if isinstance(other, int):
-            other = PadicInt.from_int(self.p, other)
+            other = Padic(self.p).from_int(other)
 
         if self.p != other.p:
             raise ValueError(
                 f"Cannot add p-adic integers with different p: {self.p} {other.p}"
             )
 
+        @functools.lru_cache
         def addition_digit_function(n: int) -> int:
             carry = 0
             if n > 0:
