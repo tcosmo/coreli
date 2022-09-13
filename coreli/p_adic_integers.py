@@ -15,7 +15,8 @@ from coreli.utils import list_int_to_list_str, int_to_base
 
 
 class Padic(object):
-    """Wrapper around p-adic integers with p fixed, i.e. it represents the field Zp.
+    """Wrapper around p-adic integers with p fixed, i.e. it represents the ring Z_p.
+    Note that p does not need to be prime for Z_p(+,x) to be defined but Z_p is a field iff p is prime.
 
     :Example:
     >>> Z2 = Padic(2)
@@ -33,7 +34,8 @@ class Padic(object):
         return PadicInt(self.p, digit_function)
 
     def from_int(self, x: int) -> "PadicInt":
-        """Constructs a p-adic integer from an integer.
+        """Constructs a p-adic integer from an integer x. The n-th digit is f^n(x) mod p,
+        with f the Collatz-like map f(x) = (x-i)/p if x = i mod p.
 
         :Example:
         >>> Z2 = Padic(2)
@@ -46,20 +48,17 @@ class Padic(object):
         '...2222222122'
         """
 
-        digits = int_to_base(abs(x), self.p, False)
-        if x >= 0:
-            digit_function = lambda n: 0 if n >= len(digits) else digits[n]
-            return PadicInt(self.p, digit_function, underlying_rational=x)
+        def digit_function(n):
+            @functools.lru_cache
+            def digit_function_aux(n):
+                if n == 0:
+                    return x
+                previous_iterate = digit_function_aux(n - 1)
+                return previous_iterate // self.p
 
-        new_digits = [self.p - d - 1 for d in digits]
+            return digit_function_aux(n) % self.p
 
-        digit_function = (
-            lambda n: self.p - 1 if n >= len(digits) else new_digits[n]
-        )
-
-        to_return = PadicInt(self.p, digit_function) + 1
-        to_return.underlying_rational = x
-        return to_return
+        return PadicInt(self.p, digit_function, underlying_rational=x)
 
 
 class PadicInt(object):
@@ -71,7 +70,9 @@ class PadicInt(object):
         digit_function: Callable[[int], int] = lambda n: 0,
         underlying_rational: Union[None, int, Rational] = None,
     ):
-        """Constructs a p-adic integer.
+        """Constructs a p-adic integer, i.e. a base-p string that is infinite on the most signficant side,
+        p does not need to be prime (see docstring of class Padic).
+
         Args:
                 p (int): digits of the number are in 0 ... p-1
                 digit_function (Callable[[int], int]): function that gives the nth digit of the number
@@ -144,6 +145,11 @@ class PadicInt(object):
 
         # Updating the underlying rational if it is set for both operands
         underlying_rational = None
+        if None not in (self.underlying_rational, other.underlying_rational):
+            underlying_rational = (
+                self.underlying_rational + other.underlying_rational
+            )
+
         if (
             self.underlying_rational is not None
             and other.underlying_rational is not None
