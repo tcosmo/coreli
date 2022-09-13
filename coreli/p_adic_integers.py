@@ -10,6 +10,7 @@ Implementing p-adic integers.
 
 from typing import Callable, List, Union
 import functools
+from sympy import Rational
 from coreli.utils import list_int_to_list_str, int_to_base
 
 
@@ -18,8 +19,11 @@ class Padic(object):
 
     :Example:
     >>> Z2 = Padic(2)
+    >>> Z2.from_int(25).to_str(10)
+    '...0000011001'
     >>> x = Z2(digit_function = lambda n: n%2)
-
+    >>> x.to_str(10)
+    '...1010101010'
     """
 
     def __init__(self, p: int):
@@ -45,7 +49,7 @@ class Padic(object):
         digits = int_to_base(abs(x), self.p, False)
         if x >= 0:
             digit_function = lambda n: 0 if n >= len(digits) else digits[n]
-            return PadicInt(self.p, digit_function)
+            return PadicInt(self.p, digit_function, underlying_rational=x)
 
         new_digits = [self.p - d - 1 for d in digits]
 
@@ -53,7 +57,9 @@ class Padic(object):
             lambda n: self.p - 1 if n >= len(digits) else new_digits[n]
         )
 
-        return PadicInt(self.p, digit_function) + 1
+        to_return = PadicInt(self.p, digit_function) + 1
+        to_return.underlying_rational = x
+        return to_return
 
 
 class PadicInt(object):
@@ -63,15 +69,22 @@ class PadicInt(object):
         self,
         p: int,
         digit_function: Callable[[int], int] = lambda n: 0,
+        underlying_rational: Union[None, int, Rational] = None,
     ):
         """Constructs a p-adic integer.
         Args:
                 p (int): digits of the number are in 0 ... p-1
                 digit_function (Callable[[int], int]): function that gives the nth digit of the number
+                underlying_rational (Union[None, int, Rational]): if this p-adic integer comes from a rational,
+                    this  hint will allow to keep track of that rational along operations applied on the number.
+                    This is automatically set by factories such as Padic.from_int / Padic.from_rational.
 
         """
         self.p: int = p
         self.digit_function: Callable[[int], int] = digit_function
+        self.underlying_rational: Union[
+            None, int, Rational
+        ] = underlying_rational
 
     def digits(self, n: int) -> List[int]:
         """Returns the first n digits of the number. Raises a value error if a digit is >= p."""
@@ -129,4 +142,17 @@ class PadicInt(object):
 
             return sum_ % self.p, new_carry
 
-        return PadicInt(self.p, lambda n: addition_digit_function(n)[0])
+        # Updating the underlying rational if it is set for both operands
+        underlying_rational = None
+        if (
+            self.underlying_rational is not None
+            and other.underlying_rational is not None
+        ):
+            underlying_rational = (
+                self.underlying_rational + other.underlying_rational
+            )
+        return PadicInt(
+            self.p,
+            lambda n: addition_digit_function(n)[0],
+            underlying_rational=underlying_rational,
+        )
