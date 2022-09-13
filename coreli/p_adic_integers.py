@@ -82,7 +82,9 @@ class PadicInt(object):
 
         """
         self.p: int = p
-        self.digit_function: Callable[[int], int] = digit_function
+        self.digit_function: Callable[[int], int] = functools.lru_cache(
+            digit_function
+        )
         self.underlying_rational: Union[
             None, int, Rational
         ] = underlying_rational
@@ -108,14 +110,19 @@ class PadicInt(object):
     def __repr__(self) -> str:
         return str(self)
 
+    def __radd__(self, other: Union["PadicInt", int]) -> "PadicInt":
+        """This is needed for Python to treat 12 + x (with 12 an int) the same way as x + 12
+        (it would raise TypeError error otherwise)
+        """
+        return self + other
+
     def __add__(self, other: Union["PadicInt", int]) -> "PadicInt":
         """Computes p-adic addition.
 
         :Example:
         >>> Z2 = Padic(2)
         >>> x = Z2.from_int(25)
-        >>> y = Z2.from_int(47)
-        >>> (x + y).to_str(10)
+        >>> (47 + x).to_str(10)
         '...0001001000'
         >>> z = Z2(digit_function = lambda n: n%2)
         >>> (z + z + x).to_str(20)
@@ -160,5 +167,79 @@ class PadicInt(object):
         return PadicInt(
             self.p,
             lambda n: addition_digit_function(n)[0],
+            underlying_rational=underlying_rational,
+        )
+
+    def __rmul__(self, other: Union["PadicInt", int]) -> "PadicInt":
+        """This is needed for Python to treat 47*x (with 47 an int) the same way as x*47
+        (it would raise TypeError error otherwise)
+        """
+        return self * other
+
+    def __mul__(self, other: Union["PadicInt", int]) -> "PadicInt":
+        """Computes p-adic multiplication.
+
+        :Example:
+        >>> Z2 = Padic(2)
+        >>> x = Z2.from_int(3)
+        >>> (2*x).to_str(10)
+        '...0000000110'
+        >>> (5*x).to_str(10)
+        '...0000001111'
+        >>> (27*x).to_str(10)
+        '...0001010001'
+        >>> (x*x).to_str(10)
+        '...0000001001'
+        >>> y = Z2(digit_function=lambda x: (x+1)%2)
+        >>> (3*y + 1).to_str(10)
+        '...0000000000'
+        """
+
+        # Convert to p-adic if given an int
+        if isinstance(other, int):
+            other = Padic(self.p).from_int(other)
+
+        if self.p != other.p:
+            raise ValueError(
+                f"Cannot multiply p-adic integers with different p: {self.p} {other.p}"
+            )
+
+        @functools.lru_cache
+        def multiplication_digit_function(n: int) -> int:
+            carry = 0
+            if n > 0:
+                _, carry = multiplication_digit_function(n - 1)
+
+            # Cauchy produt rule
+            sum_ = (
+                sum(
+                    [
+                        self.digit_function(k) * other.digit_function(n - k)
+                        for k in range(n + 1)
+                    ]
+                )
+                + carry
+            )
+            new_carry = sum_ // self.p
+
+            return sum_ % self.p, new_carry
+
+        # Updating the underlying rational if it is set for both operands
+        underlying_rational = None
+        if None not in (self.underlying_rational, other.underlying_rational):
+            underlying_rational = (
+                self.underlying_rational * other.underlying_rational
+            )
+
+        if (
+            self.underlying_rational is not None
+            and other.underlying_rational is not None
+        ):
+            underlying_rational = (
+                self.underlying_rational + other.underlying_rational
+            )
+        return PadicInt(
+            self.p,
+            lambda n: multiplication_digit_function(n)[0],
             underlying_rational=underlying_rational,
         )
