@@ -20,10 +20,10 @@ class Padic(object):
 
     :Example:
     >>> Z2 = Padic(2)
-    >>> Z2.from_int(25).to_str(10)
+    >>> Z2.from_int(25).to_str()
     '...0000011001'
     >>> x = Z2(digit_function = lambda n: n%2)
-    >>> x.to_str(10)
+    >>> x.to_str()
     '...1010101010'
     """
 
@@ -39,12 +39,12 @@ class Padic(object):
 
         :Example:
         >>> Z2 = Padic(2)
-        >>> Z2.from_int(25).to_str(10)
+        >>> Z2.from_int(25).to_str()
         '...0000011001'
         >>> Z2.from_int(-4).to_str(20)
         '...11111111111111111100'
         >>> Z3 = Padic(3)
-        >>> Z3.from_int(-10).to_str(10)
+        >>> Z3.from_int(-10).to_str()
         '...2222222122'
         """
 
@@ -98,7 +98,7 @@ class PadicInt(object):
             )
         return digits
 
-    def to_str(self, n: int) -> str:
+    def to_str(self, n: int = default_str_precision) -> str:
         """Give the first n digits as a string. The least significant digit is on the right."""
         digits = list_int_to_list_str(self.digits(n))
         return "..." + "".join(digits[::-1])
@@ -122,7 +122,7 @@ class PadicInt(object):
         :Example:
         >>> Z2 = Padic(2)
         >>> x = Z2.from_int(25)
-        >>> (47 + x).to_str(10)
+        >>> (47 + x).to_str()
         '...0001001000'
         >>> z = Z2(digit_function = lambda n: n%2)
         >>> (z + z + x).to_str(20)
@@ -182,16 +182,16 @@ class PadicInt(object):
         :Example:
         >>> Z2 = Padic(2)
         >>> x = Z2.from_int(3)
-        >>> (2*x).to_str(10)
+        >>> (2*x).to_str()
         '...0000000110'
-        >>> (5*x).to_str(10)
+        >>> (5*x).to_str()
         '...0000001111'
-        >>> (27*x).to_str(10)
+        >>> (27*x).to_str()
         '...0001010001'
-        >>> (x*x).to_str(10)
+        >>> (x*x).to_str()
         '...0000001001'
         >>> y = Z2(digit_function=lambda x: (x+1)%2)
-        >>> (3*y + 1).to_str(10)
+        >>> (3*y + 1).to_str()
         '...0000000000'
         """
 
@@ -241,5 +241,35 @@ class PadicInt(object):
         return PadicInt(
             self.p,
             lambda n: multiplication_digit_function(n)[0],
+            underlying_rational=underlying_rational,
+        )
+
+    def __lshift__(self, shift: int):
+        """Implements x << shift, which adds `shift` 0s to the end of x.
+        :Example:
+        >>> Z2 = Padic(2)
+        >>> x = Z2.from_int(3)
+        >>> x.to_str()
+        '...0000000011'
+        >>> (x << 3).to_str()
+        '...0000011000'
+        >>> Z3 = Padic(3)
+        >>> y = Z3.from_int(19)
+        >>> (y << 4).to_str()
+        '...0002010000'
+        """
+
+        def left_shifted_digit_function(n: int):
+            if n < shift:
+                return 0
+            return self.digit_function(n - shift)
+
+        underlying_rational = None
+        if underlying_rational is not None:
+            underlying_rational *= self.p**shift
+
+        return PadicInt(
+            self.p,
+            left_shifted_digit_function,
             underlying_rational=underlying_rational,
         )
