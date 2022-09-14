@@ -7,7 +7,7 @@
         https://arxiv.org/abs/2111.02635
 """
 from typing import Union
-from coreli.padic import PadicInt
+from coreli.padic_integers import PadicInt
 from sympy import Rational
 
 
@@ -30,7 +30,7 @@ def C(x: Union[int, Rational, PadicInt]) -> Union[int, Rational, PadicInt]:
         -1/23
         >>> C(Rational(-1,23))
         20/23
-        >>> from coreli.padic import Padic
+        >>> from coreli.padic_integers import Padic
         >>> Z2 = Padic(2)
         >>> minus_one_third = Z2(digit_function = lambda n: (n+1)%2)
         >>> C(minus_one_third).to_str()
@@ -86,7 +86,7 @@ def T(x: int) -> Union[int, Rational, PadicInt]:
         -1/23
         >>> T(Rational(-1,23))
         10/23
-        >>> from coreli.padic import Padic
+        >>> from coreli.padic_integers import Padic
         >>> Z2 = Padic(2)
         >>> minus_one_third = Z2(digit_function = lambda n: (n+1)%2)
         >>> T(minus_one_third).to_str()
