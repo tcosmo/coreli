@@ -363,6 +363,11 @@ class PadicInt(object):
         >>> x = Z2.from_rational(Rational(-1,23))
         >>> x.rational_periodic_representation()
         '(00001011001)*'
+
+        >>> Z3 = Padic(3)
+        >>> x = Z3.from_rational(Rational(346,86))
+        >>> x.rational_periodic_representation()
+        '(102221010010202201110120001212212020021112)* 22'
         """
 
         if self.underlying_rational is None:
