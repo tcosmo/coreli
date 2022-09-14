@@ -8,9 +8,10 @@ Implementing p-adic integers.
         https://arxiv.org/abs/1701.06794
 """
 
-from typing import Callable, List, Union
+from typing import Callable, List, Union, Dict
 import functools
 from sympy import Rational
+from math import gcd
 from coreli.utils import list_int_to_list_str, int_to_base
 
 
@@ -48,15 +49,47 @@ class Padic(object):
         '...2222222122'
         """
 
-        def digit_function(n):
+        def digit_function(n: int) -> int:
             @functools.lru_cache
-            def digit_function_aux(n):
+            def digit_function_aux(n: int) -> int:
                 if n == 0:
                     return x
                 previous_iterate = digit_function_aux(n - 1)
                 return previous_iterate // self.p
 
             return digit_function_aux(n) % self.p
+
+        return PadicInt(self.p, digit_function, underlying_rational=x)
+
+    def from_rational(self, x: "Rational") -> "PadicInt":
+        """Constructs a p-adic integer from a rational x with denominator that is coprime with p. The n-th digit is f^n(x) mod p, with f the Collatz-like map f(x) = (x-i)/p if x = i mod p.
+
+        :Example:
+        >>> Z2 = Padic(2)
+        >>> Z2.from_rational(Rational(-1,3)).to_str()
+        '...0101010101'
+        >>> Z2.from_rational(Rational(-1,23)).to_str(20)
+        '...00101100100001011001'
+        >>> Z3 = Padic(3)
+        >>> Z3.from_rational(Rational(77,13)).to_str()
+        '...2002002022'
+        """
+
+        if gcd(self.p, x.denominator) != 1:
+            raise ValueError(
+                f"Rational {x} cannot be expressed {self.p}-adically because its denominator is not co-prime with p."
+            )
+
+        def digit_function(n: int) -> int:
+            @functools.lru_cache
+            def digit_function_aux(n: int) -> Rational:
+                if n == 0:
+                    return x
+                previous_iterate = digit_function_aux(n - 1)
+                i = previous_iterate.numerator % self.p
+                return (previous_iterate - i) / self.p
+
+            return digit_function_aux(n).numerator % self.p
 
         return PadicInt(self.p, digit_function, underlying_rational=x)
 
@@ -310,3 +343,52 @@ class PadicInt(object):
             right_shifted_digit_function,
             underlying_rational=underlying_rational,
         )
+
+    def rational_periodic_representation(self) -> str:
+        """Rational p-adic integers are exactly the p-adics integers with eventually periodic representation. Hence we can write them (w1)* w0 with w0 and w1 finite base-p strings.
+
+        [1] Keith Conrad. “The p-adic expansion of rational numbers”. https://kconrad.math.uconn.edu/blurbs/gradnumthy/rationalsinQp.pdf.
+
+        :Example:
+        >>> Z2 = Padic(2)
+        >>> x = Z2.from_int(0)
+        >>> x.rational_periodic_representation()
+        '(0)*'
+        >>> x = Z2.from_int(-17)
+        >>> x.rational_periodic_representation()
+        '(1)* 01111'
+        >>> x = Z2.from_rational(Rational(1778,53))
+        >>> x.rational_periodic_representation()
+        '(0010000111001111101100101011011110001100000100110101)* 101010'
+        >>> x = Z2.from_rational(Rational(-1,23))
+        >>> x.rational_periodic_representation()
+        '(00001011001)*'
+        """
+
+        if self.underlying_rational is None:
+            raise ValueError(
+                "Rational periodic representation can only be computed on p-adic integers that have `underlying_rational` defined."
+            )
+
+        # We compute the periodic representation by keeping track
+        # of all numerators enumerated under iteration of f(x) = (x-i)/p with
+        # i = x.numerator % p
+        seen_numerators: Dict[int, int] = {}
+        # We wrap around Rational in case `self.underlying_rational` is an int
+        x = Rational(self.underlying_rational)
+        digit_list = []
+        k = 0
+        while x.numerator not in seen_numerators:
+            seen_numerators[x.numerator] = k
+            i = x.numerator % self.p
+            digit_list.append(i)
+            x = (x - i) / self.p
+            k += 1
+        k = seen_numerators[x.numerator]
+        w0 = "".join(list_int_to_list_str(digit_list[:k][::-1]))
+        w1 = "".join(list_int_to_list_str(digit_list[k:][::-1]))
+
+        if len(w0) == 0:
+            return f"({w1})*"
+
+        return f"({w1})* {w0}"
