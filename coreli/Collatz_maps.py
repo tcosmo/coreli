@@ -7,10 +7,8 @@
         https://arxiv.org/abs/2111.02635
 """
 from typing import Union
-from coreli.p_adic_integers import Padic, PadicInt
-from coreli.utils import iterate
+from coreli.padic import PadicInt
 from sympy import Rational
-from sympy.ntheory.primetest import is_square
 
 
 def C(x: Union[int, Rational, PadicInt]) -> Union[int, Rational, PadicInt]:
@@ -32,10 +30,12 @@ def C(x: Union[int, Rational, PadicInt]) -> Union[int, Rational, PadicInt]:
         -1/23
         >>> C(Rational(-1,23))
         20/23
+        >>> from coreli.padic import Padic
         >>> Z2 = Padic(2)
         >>> minus_one_third = Z2(digit_function = lambda n: (n+1)%2)
         >>> C(minus_one_third).to_str()
         '...0000000000'
+        >>> from coreli.utils import iterate
         >>> some_2_adic = Z2(digit_function = lambda n: iterate(C,n,n)%2)
         >>> C(some_2_adic).to_str(20)
         '...00001000100001010000'
@@ -86,10 +86,12 @@ def T(x: int) -> Union[int, Rational, PadicInt]:
         -1/23
         >>> T(Rational(-1,23))
         10/23
+        >>> from coreli.padic import Padic
         >>> Z2 = Padic(2)
         >>> minus_one_third = Z2(digit_function = lambda n: (n+1)%2)
         >>> T(minus_one_third).to_str()
         '...0000000000'
+        >>> from sympy.ntheory.primetest import is_square
         >>> some_2_adic = Z2(digit_function = lambda n: int(is_square(n)))
         >>> some_2_adic.to_str(40)
         '...0001000000000010000000010000001000010011'
