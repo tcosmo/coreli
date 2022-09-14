@@ -273,3 +273,40 @@ class PadicInt(object):
             left_shifted_digit_function,
             underlying_rational=underlying_rational,
         )
+
+    def __rshift__(self, shift: int):
+        """Implements x >> shift, which remove `shift` digits of the end of x.
+        :Example:
+        >>> Z2 = Padic(2)
+        >>> x = Z2.from_int(6)
+        >>> x.to_str()
+        '...0000000110'
+        >>> (x >> 1).to_str()
+        '...0000000011'
+        >>> (x >> 2).to_str()
+        '...0000000001'
+        >>> (x >> 3).to_str()
+        '...0000000000'
+        >>> Z3 = Padic(3)
+        >>> x = Z3.from_int(1036)
+        >>> x.to_str()
+        '...0001102101'
+        >>> (x >> 3).to_str()
+        '...0000001102'
+        """
+
+        def right_shifted_digit_function(n: int):
+            return self.digit_function(n + shift)
+
+        underlying_rational = None
+        if underlying_rational is not None:
+            if isinstance(underlying_rational, int):
+                underlying_rational //= self.p**shift
+            else:  # Careful // on sympy Rational would have different behavior
+                underlying_rational /= self.p**shift
+
+        return PadicInt(
+            self.p,
+            right_shifted_digit_function,
+            underlying_rational=underlying_rational,
+        )
