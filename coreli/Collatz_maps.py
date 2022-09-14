@@ -7,11 +7,13 @@
         https://arxiv.org/abs/2111.02635
 """
 from typing import Union
-from coreli.p_adic_integers import PadicInt
+from coreli.p_adic_integers import Padic, PadicInt
+from coreli.utils import iterate
 from sympy import Rational
+from sympy.ntheory.primetest import is_square
 
 
-def C(x: Union[int, Rational, PadicInt]) -> int:
+def C(x: Union[int, Rational, PadicInt]) -> Union[int, Rational, PadicInt]:
     """The Collatz map, defined on ints, rational with odd denominator and 2-adic integers.
 
     References
@@ -30,6 +32,13 @@ def C(x: Union[int, Rational, PadicInt]) -> int:
         -1/23
         >>> C(Rational(-1,23))
         20/23
+        >>> Z2 = Padic(2)
+        >>> minus_one_third = Z2(digit_function = lambda n: (n+1)%2)
+        >>> C(minus_one_third).to_str()
+        '...0000000000'
+        >>> some_2_adic = Z2(digit_function = lambda n: iterate(C,n,n)%2)
+        >>> C(some_2_adic).to_str(20)
+        '...00001000100001010000'
     """
 
     if isinstance(x, int):
@@ -51,10 +60,14 @@ def C(x: Union[int, Rational, PadicInt]) -> int:
             raise ValueError(
                 f"Can only run the Collatz map on 2-adic integers: input is {x.p}-adic does not comply"
             )
-        raise NotImplementedError
+        if x.digit_function(0) == 0:
+            return x >> 1
+        return (
+            x + x + x + 1
+        )  # addition algorithm more efficient than multiplication
 
 
-def T(x: int) -> int:
+def T(x: int) -> Union[int, Rational, PadicInt]:
     """The Collatz map, slightly accelerated, defined on ints, rational with odd denominator and 2-adic integers.
 
     References
@@ -73,6 +86,15 @@ def T(x: int) -> int:
         -1/23
         >>> T(Rational(-1,23))
         10/23
+        >>> Z2 = Padic(2)
+        >>> minus_one_third = Z2(digit_function = lambda n: (n+1)%2)
+        >>> T(minus_one_third).to_str()
+        '...0000000000'
+        >>> some_2_adic = Z2(digit_function = lambda n: int(is_square(n)))
+        >>> some_2_adic.to_str(40)
+        '...0001000000000010000000010000001000010011'
+        >>> T(some_2_adic).to_str(40)
+        '...0001100000000011000000011000001100011101'
     """
     if isinstance(x, int):
         if x % 2 == 0:
@@ -93,4 +115,8 @@ def T(x: int) -> int:
             raise ValueError(
                 f"Can only run the Collatz map on 2-adic integers: input is {x.p}-adic does not comply"
             )
-        raise NotImplementedError
+        if x.digit_function(0) == 0:
+            return x >> 1
+        return (
+            x + x + x + 1
+        ) >> 1  # addition algorithm more efficient than multiplication

@@ -1,4 +1,4 @@
-from typing import List, Union
+from typing import Callable, List, Union
 
 
 def list_int_to_list_str(l: List[int]) -> List[str]:
@@ -53,3 +53,19 @@ def int_to_base(
         return digits
 
     return "".join(list_int_to_list_str(digits)[::-1])
+
+
+def iterate(f, n, x_0) -> int:
+    """Returns the nth iterate of f from x_0, i.e., f^n(x_0)."""
+    last_result = x_0
+    for _ in range(n):
+        last_result = f(last_result)
+    return last_result
+
+
+def iterates(f, n, x_0) -> List[int]:
+    """Returns the list of the n+1 first iterates of f (including x_0): [x_0, f(x_0), ..., f^n(x_0)]."""
+    to_return = [x_0]
+    for _ in range(n):
+        to_return = f(to_return[-1])
+    return to_return
