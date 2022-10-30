@@ -17,11 +17,15 @@ from sympy import Rational
         The American Mathematical Monthly 92.1, pp. 3-23. 1985.
         http://www.jstor.org/stable/2322189
 
-    [3] Parity Sequences of the 3x+1 Map on the 2-adic Integers and Euclidean
+    [3] On the combinatorial structure of 3N + 1 predecessor sets. Günther Wirsching. 
+        Discrete Mathematics 148.1-3, pp. 265-286. 1996. 
+        doi: 10.1016/0012-365x(94)00243-c.
+
+    [4] Parity Sequences of the 3x+1 Map on the 2-adic Integers and Euclidean
         Embedding. Olivier Rozier. Integers 19. 2019.
         https://arxiv.org/abs/1805.00133
 
-    [4] Binary expression of ancestors in the Collatz graph. Tristan Stérin.
+    [5] Binary expression of ancestors in the Collatz graph. Tristan Stérin.
         RP 2020: Proceedings of the 14th International Conference on Reachability 
         Problems, (Paris, France, October 19-21, 2020), pp 115-130. 2020.
         https://arxiv.org/abs/1907.00775
@@ -33,7 +37,7 @@ class ParityVector(object):
     parity of elements of a Collatz sequences (with map T).
     (i.e. which of the maps x/2 or (3x+1)/2 is taken at each step)
 
-    It is known that (see [1,2,3]):
+    It is known that (see [1,2,4]):
         - All parity vectors are feasible in N, i.e. for any parity vector
         of length n there is a natural number that follows the parities given by the 
         parity vector in its first n T-Collatz steps.
@@ -50,7 +54,7 @@ class ParityVector(object):
         - When considering infinite parity vectors (i.e. associated to infinite 
         T-Collatz sequences), we get a continuous bijection Q from Z_2 to Z_2, 
         mapping Collatz-inputs in Z_2 to their parity vector, seen as an element 
-        of Z_2 (see [2,3]).
+        of Z_2 (see [2,4]).
 
         - It is known that if Q(x) is eventually periodic then x is eventually periodic
         i.e. x is rational.
@@ -64,6 +68,15 @@ class ParityVector(object):
             raise ValueError(f"A parity vector must contain only 0s and 1s, which is not the case for {parity_vector}")
         self.parity_vector = parity_vector
     
+    def __len__(self):
+        return len(self.parity_vector)
+
+    def odd_len(self):
+        """ Returns the number of 1s (odd terms) in the parity vector which is a metric that is often used
+        when working with parity vector.
+        """
+        return len(list(filter(lambda x: x==1,self.parity_vector)))
+
     def __repr__(self):
         return str(self)
     
@@ -86,8 +99,8 @@ class ParityVector(object):
         such that its first n T-Collatz steps follow the parities given by 
         the length-n parity vector. And, β = T^n(α).
 
-        There are explicit formulae for α and β, seen [3]. But here we use an iterative 
-        algorithm described in [4].
+        There are explicit formulae for α and β, seen [4]. But here we use an iterative 
+        algorithm described in [5].
 
         If `symbolic` is true, the function returns α in base 2 and n bits and β in base 3
         and k bits with k the number of 1s in the parity vector.
@@ -101,7 +114,7 @@ class ParityVector(object):
         ('00101', '02')
         """
 
-        n = len(self.parity_vector)
+        n = len(self)
         alpha = 0
         beta = 0
         k = 0
@@ -125,6 +138,46 @@ class ParityVector(object):
             return alpha, beta
 
         return int_to_base(alpha,2,n), int_to_base(beta,3,k)
+
+    def cyclic_rational(self) -> Rational:
+        """ Returns the unique rational x such that T^n(x) = x and the parity vector
+        corresponds to the n first Collatz steps of x.
+
+        Explicit formula deducible from 2.13 in [3] (page 41). 
+
+        This rational also happen to be 2-adic, 3-adic and 6-adic integer since its numerator
+        is of the form 2^n - 3^k (its not a multiple of 2, 3, or 6).
+
+        :Example:
+            >>> ParityVector([1]).cyclic_rational()
+            -1
+            >>> ParityVector([1,1,0]).cyclic_rational()
+            -5
+            >>> ParityVector([1,1,1,1,0,1,1,1,0,0,0]).cyclic_rational()
+            -17
+            >>> ParityVector([1,1,0,1,0,0]).cyclic_rational()
+            23/37
+            >>> ParityVector([0,0,1,0,0]).cyclic_rational()
+            4/29
+            >>> ParityVector([1,1,0,1,1]).cyclic_rational()
+            -85/49
+            >>> ParityVector([1,0,0,1,1,1]).cyclic_rational()
+            -179/17
+        """
+
+        indices_of_1s = [i for i, x in enumerate(self.parity_vector) if x == 1]
+
+        n = len(self)
+        k = self.odd_len()
+        sum = 0
+        
+        for i, s in enumerate(indices_of_1s):
+            sum += 3**(k-1-i)*2**(s)
+        
+        return Rational(sum, 2**n - 3**k)
+
+
+
 
 
 
