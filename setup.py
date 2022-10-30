@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="coreli",
-    version="0.0.3",
+    version="0.0.4",
     author="Tristan Stérin",
     author_email="tristan.sterin@mu.ie",
     description="The Collatz Research Library provides tools for experimenting and testing hypothesises related to the Collatz Process.",

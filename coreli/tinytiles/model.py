@@ -49,7 +49,7 @@ class Tiling(object):
                 if score >= threshold:
                     return tile_type
 
-    def get_top_left_tile(self) -> Union[None,SquareGlues]:
+    def get_top_left_tile(self) -> Union[None,int,SquareGlues]:
         world_w, world_h = self.get_world_boundaries()
         
         top_left = 0,world_h

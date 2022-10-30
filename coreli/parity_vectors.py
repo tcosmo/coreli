@@ -141,6 +141,42 @@ class ParityVector(object):
 
         return int_to_base(alpha,2,n), int_to_base(beta,3,k)
 
+    def rotate(self, n: int = 1) -> "ParityVector":
+        def rotate_list(l,n):
+            sign = -1 if n < 0 else 1
+            n = sign*(abs(n)%len(l))
+            return l[n:] + l[:n]
+        rotated_pv = rotate_list(self.parity_vector,n)
+        return ParityVector(rotated_pv)
+
+    def most_complex_tile(self) -> Union[None,int]:
+        """ Returns the "most complex tile" of a parity vector. 
+        See Tristan Stérin's thesis, Chapter 1, Section 1.5, for definition.
+
+        >>> ParityVector([1,1,0,1]*2).most_complex_tile()
+        2
+
+        >>> ParityVector([1,1,0,1]*2).rotate()
+        [1, 0, 1, 1, 1, 0, 1, 1]
+        >>> ParityVector([1,1,0,1]*2).rotate().most_complex_tile()
+        3
+
+        >>> ParityVector([1,1,0,1]*2).rotate(-1)
+        [1, 1, 1, 0, 1, 1, 1, 0]
+        >>> ParityVector([1,1,0,1]*2).rotate(-1).most_complex_tile()
+        5
+        """
+        tiling = self.to_tiling()
+        tiling.all_steps()
+        tile = tiling.get_top_left_tile()
+
+        if tile is None or not isinstance(tile,int):
+            return None
+        
+        return tile
+        
+
+
     def cyclic_rational(self) -> Rational:
         """ Returns the unique rational x such that T^n(x) = x and the parity vector
         corresponds to the n first Collatz steps of x.
