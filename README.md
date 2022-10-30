@@ -12,25 +12,6 @@ The **Collatz Conjecture**, unresolved since the 60s, states that, any stritcly 
 
 The appararent simplicity of this problem hides a very difficult mathematical problem. Actually, we believe that this problem has a lot to do with **Computer Science**. That's why we created **Coreli**, a library for experimenting and testing hypothesises regarding the Collatz process.      
 
-The features of **Coreli** are based on research which is listed below. Please browse the `examples` folder to get an idea of what you can do with it.
-
-# Examples
-## Regular expressions of ancestors
-
-The notebook `examples/Binary expression of ancestors in the Collatz graph.ipynb` shows how to 
-use `coreli` to generate the regular expression generating Collatz ancestors at odd distance k in the Collatz graph. Refer to the paper: [Binary expression of ancestors in the Collatz graph](https://arxiv.org/abs/1907.00775) for more details.
-
-## Running the Collatz process on 2-adic integers
-
-The notebook `examples/Collatz 2-adic and rational cycles.ipynb` shows how to use `coreli` to run the Collatz process in its generalisation to numbers with infinite binary expansion (2-adic integers). See [Lagarias 1985] or [Parity sequences of the 3x+1 map on the 2-adic integers and Euclidean embedding](https://arxiv.org/abs/1805.00133) for more details.
-
-## Important note
-
-If you want to play with the notebooks presented in `examples` (as you are very encouraged to do), please copy them in the folder `examples_safe` before doing anything and run those copied notebooks instead. 
-
-Indeed, the folder `examples_safe` is not under version control hence, you won't encounter annoying problems related to what you may have done in the notebooks when you pull future versions of coreli.
-
-
 # Doc
 
 Coreli's doc is [hosted here](https://dna.hamilton.ie/tsterin/coreli/docs/).

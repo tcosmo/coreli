@@ -3,50 +3,37 @@ Welcome to coreli's documentation!
 
 Coreli is the `Collatz Research Library <https://github.com/tcosmo/coreli>`_.
 
-coreli.base_conversion_routines
-===============================
-.. automodule:: coreli.base_conversion_routines
-    :members:
-
-coreli.routines
-===============
-.. automodule:: coreli.routines
-    :members:
-
-coreli.modular_routines
-=======================
-
-.. automodule:: coreli.modular_routines
+coreli.Collatz_maps
+===================
+.. automodule:: coreli.Collatz_maps
     :members:
 
 coreli.parity_vectors
-=======================
-
+=====================
 .. automodule:: coreli.parity_vectors
     :members:
 
-coreli.predecessors
-=======================
+coreli.padic_integers
+=====================
 
-.. automodule:: coreli.predecessors
+.. automodule:: coreli.padic_integers
     :members:
 
-coreli.padic_routines
-=======================
+coreli.Collatz_tilings
+======================
 
-.. automodule:: coreli.padic_routines
+.. automodule:: coreli.Collatz_tilings
     :members:
 
-coreli.cycles
-=======================
+coreli.utils
+============
 
-.. automodule:: coreli.cycles
+.. automodule:: coreli.utils
     :members:
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
 
 
 Indices and tables
