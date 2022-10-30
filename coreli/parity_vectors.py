@@ -1,6 +1,8 @@
 from typing import Tuple, Union
 from coreli.Collatz_maps import T
+from coreli.Collatz_tilings import Collatz_tileset
 from coreli.padic_integers import PadicInt, least_significant_digit
+from coreli.tinytiles.model import SquareGlues, Tiling
 from coreli.utils import int_to_base, iterate,iterates
 from sympy import Rational
 
@@ -176,10 +178,34 @@ class ParityVector(object):
         
         return Rational(sum, 2**n - 3**k)
 
-
-
-
-
-
-
-    
+    def to_tiling(self) -> Tiling:
+        """ Builds the Collatz tiling associated to the parity vector.
+        """
+        pos = [len(self)-1,self.odd_len()]
+        tiling: Tiling = {}
+        
+        for pbit in self.parity_vector:
+            tpos = tuple(pos)
+            #print(tpos)  
+            if pbit == 0:
+                if tpos not in tiling:
+                    tiling[tpos] = [None]*4
+                tiling[tpos][0] = 0
+                pos[0] -= 1
+            else:
+                tpos_east = tpos[0]+1,tpos[1]
+                tpos_south = tpos[0],tpos[1]-1
+                if tpos_east not in tiling:
+                    tiling[tpos_east] = [None]*4
+                if tpos_south not in tiling:
+                    tiling[tpos_south] = [None]*4
+                #print("east",tpos_east)
+                tiling[tpos_east][3] = 1
+                tiling[tpos_south][0] = 0
+                pos[0] -= 1
+                pos[1] -= 1
+        
+        for pos in tiling:
+            tiling[pos] = SquareGlues(*tiling[pos])
+        
+        return Tiling(tiling, Collatz_tileset)

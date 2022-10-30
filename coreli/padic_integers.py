@@ -7,7 +7,7 @@
         https://arxiv.org/abs/1701.06794
 """
 
-from typing import Callable, List, Union, Dict
+from typing import Callable, List, Union, Dict, Tuple
 import functools
 from sympy import Rational
 from math import gcd
@@ -343,7 +343,7 @@ class PadicInt(object):
             underlying_rational=underlying_rational,
         )
 
-    def rational_periodic_representation(self) -> str:
+    def rational_periodic_representation(self, to_str = True) -> Union[str,Tuple[str,str]]:
         """Rational p-adic integers are exactly the p-adics integers with eventually periodic representation. Hence we can write them (w1)* w0 with w0 and w1 finite base-p strings.
 
         [1] Keith Conrad. “The p-adic expansion of rational numbers”. https://kconrad.math.uconn.edu/blurbs/gradnumthy/rationalsinQp.pdf.
@@ -392,10 +392,13 @@ class PadicInt(object):
         w0 = "".join(list_int_to_list_str(digit_list[:k][::-1]))
         w1 = "".join(list_int_to_list_str(digit_list[k:][::-1]))
 
-        if len(w0) == 0:
-            return f"({w1})*"
+        if to_str:
+            if len(w0) == 0:
+                return f"({w1})*"
 
-        return f"({w1})* {w0}"
+            return f"({w1})* {w0}"
+
+        return w1, w0
 
 def least_significant_digit(x: Union[int, Rational, PadicInt], base = 2) -> int:
     """ Returns the least significant digit of an integer in a base or rational p-adic or p-adic.
