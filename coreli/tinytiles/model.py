@@ -1,6 +1,6 @@
 from typing import Dict, Tuple, List, Union
 from collections import namedtuple
-  
+
 Coordinates = namedtuple('Coordinates', ['x','y'])
 SquareGlues = namedtuple('SquareGlues', ['north', 'east', 'south', 'west'])
 tTiling = Dict[Coordinates,SquareGlues]
@@ -92,3 +92,8 @@ class Tiling(object):
                     self.tiling[pos] = tile
                     return True
         return False 
+
+    from drawSvg import Drawing
+    def draw_svg(self) -> Drawing:
+        from coreli.tinytiles.svg_view import draw_tiling
+        return draw_tiling(self)
