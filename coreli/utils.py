@@ -1,5 +1,4 @@
-from typing import Callable, List, Union
-
+from typing import List, Union
 
 def list_int_to_list_str(l: List[int]) -> List[str]:
     """Converts each int of a list to a str.
@@ -14,7 +13,7 @@ def list_int_to_list_str(l: List[int]) -> List[str]:
 
 
 def int_to_base(
-    x: int, base: int, to_str: bool = True
+    x: int, base: int, length: Union[None,int] = None, to_str: bool = True
 ) -> Union[str, List[int]]:
     """Converts a non-negative integer to its base representation.
     Note that in the list representation, the least significant digit comes first whereas,
@@ -24,10 +23,15 @@ def int_to_base(
             x (int): the positive integer to convert
             base (int): the target base
             to_str (bool): whether the result is given as a string or a list of digits
+            length (None or int): if not None, the output representation will be padded 
+            with leading 0s so its length is equal to `length`. If `length` is smaller 
+            than the representation's size, the function will raise
 
     :Example:
         >>> int_to_base(13,2)
         '1101'
+        >>> int_to_base(13,2,9)
+        '000001101'
         >>> int_to_base(13,2,to_str=False)
         [1, 0, 1, 1]
         >>> int_to_base(313,5)
@@ -49,6 +53,12 @@ def int_to_base(
     if len(digits) == 0:
         digits = [0]
 
+
+    if length is not None:
+        if length < len(digits):
+            raise ValueError(f"Length {length} is smaller than the length of {digits}")
+        digits += [0]*(length-len(digits))
+
     if not to_str:
         return digits
 
@@ -67,5 +77,5 @@ def iterates(f, n, x_0) -> List[int]:
     """Returns the list of the n+1 first iterates of f (including x_0): [x_0, f(x_0), ..., f^n(x_0)]."""
     to_return = [x_0]
     for _ in range(n):
-        to_return = f(to_return[-1])
+        to_return.append(f(to_return[-1]))
     return to_return

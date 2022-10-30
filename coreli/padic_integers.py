@@ -1,5 +1,4 @@
-"""
-Implementing p-adic integers.
+""" Implementing p-adic integers.
 
     References
     ========== 
@@ -12,7 +11,7 @@ from typing import Callable, List, Union, Dict
 import functools
 from sympy import Rational
 from math import gcd
-from coreli.utils import list_int_to_list_str, int_to_base
+from coreli.utils import list_int_to_list_str
 
 
 class Padic(object):
@@ -397,3 +396,29 @@ class PadicInt(object):
             return f"({w1})*"
 
         return f"({w1})* {w0}"
+
+def least_significant_digit(x: Union[int, Rational, PadicInt], base = 2) -> int:
+    """ Returns the least significant digit of an integer in a base or rational p-adic or p-adic.
+
+    :Example:
+        >>> least_significant_digit(25)
+        1
+        >>> least_significant_digit(47,3)
+        2
+        >>> from sympy import Rational
+        >>> least_significant_digit(Rational(2,15))
+        0
+    """
+    if isinstance(x,int):
+        return x % base
+
+    if isinstance(x,Rational):
+        if gcd(base, x.denominator) == 1:
+            return x.numerator % base
+        else:
+            raise ValueError(
+                f"Rational {x} cannot be expressed {base}-adically because its denominator is not co-prime with p."
+            )
+    
+    if isinstance(PadicInt):
+        return x.digits(0)[0]
