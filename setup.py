@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="coreli-tcosmo",
+    name="coreli",
     version="0.0.2",
     author="Tristan Stérin",
     author_email="tristan.sterin@mu.ie",
