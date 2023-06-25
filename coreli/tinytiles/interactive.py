@@ -5,7 +5,7 @@ from IPython.display import display
 from coreli.tinytiles.model import Tiling
 from coreli.tinytiles.svg_view import draw_tiling
 
-def interactive(tiling: Tiling):
+def interactive(tiling: Tiling, synchronous=False, can_build_on_null_glues=True):
 
     first_world = copy.deepcopy(tiling.tiling)
     
@@ -23,13 +23,13 @@ def interactive(tiling: Tiling):
     def callback_step(b):
         with output:
             output.clear_output(wait=True)
-            tiling.step()
+            tiling.step(synchronous=synchronous,can_build_on_null_glues=can_build_on_null_glues)
             display(draw_tiling(tiling))
 
     def callback_steps(b):
         with output:
             output.clear_output(wait=True)
-            tiling.all_steps()
+            tiling.all_steps(synchronous=synchronous,can_build_on_null_glues=can_build_on_null_glues)
             display(draw_tiling(tiling))
             
     def callback_reset(b):
