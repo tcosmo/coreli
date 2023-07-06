@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="coreli",
-    version="0.0.5",
+    version="0.0.6",
     author="Tristan Stérin",
     author_email="tristan.sterin@mu.ie",
     description="The Collatz Research Library provides tools for experimenting and testing hypothesises related to the Collatz Process.",
@@ -18,10 +18,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
-    install_requires=[
-          'sympy==1.11.1',
-          'drawsvg==1.8.3',
-          'ipywidgets==8.0.2'
-      ],
+    python_requires=">=3.6",
+    install_requires=["sympy==1.11.1", "drawsvg==1.8.3", "ipywidgets==8.0.2"],
 )
