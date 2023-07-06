@@ -16,6 +16,13 @@ The appararent simplicity of this problem hides a very difficult mathematical pr
 
 Coreli's doc is [hosted here](https://dna.hamilton.ie/tsterin/coreli/docs/).
 
+## Dev: deploy to pypi
+
+```
+python setup.py sdist
+twine upload dist/*
+```
+
 # References
 
 - David Applegate and Jeffrey Lagarias. Density bounds for the 3x + 1 problem. ii. krasikov
