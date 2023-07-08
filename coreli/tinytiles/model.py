@@ -38,7 +38,8 @@ class Tiling(object):
 
     def find_matching_tile_in_tileset(
         self, glues: SquareGlues, threshold: int
-    ) -> Union[None, SquareGlues]:
+    ) -> Union[None, list[SquareGlues]]:
+        candidates = []
         to_ret = None
         for tile_type in self.tileset:
             score = 0
@@ -50,7 +51,8 @@ class Tiling(object):
                     score += 1
 
                 if score >= threshold:
-                    return tile_type
+                    candidates.append(tile_type)
+        return candidates
 
     def get_top_left_tile(self) -> Union[None, int, SquareGlues]:
         world_w, world_h = self.get_world_boundaries()
@@ -98,9 +100,10 @@ class Tiling(object):
 
                 neighboring_glues = self.get_neighboring_glues(pos)
 
-                tile = self.find_matching_tile_in_tileset(neighboring_glues, threshold)
+                tiles = self.find_matching_tile_in_tileset(neighboring_glues, threshold)
                 # print(pos,neighboring_glues,tile)
-                if tile is not None:
+                if tiles is not None and len(tiles) == 1:
+                    tile = tiles[0]
                     if synchronous:
                         to_update.append((pos, tile))
                     else:
@@ -110,6 +113,8 @@ class Tiling(object):
         if synchronous:
             for pos, tile in to_update:
                 self.tiling[pos] = tile
+
+            return len(to_update) != 0
 
         return False
 

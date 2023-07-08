@@ -39,7 +39,7 @@ def south_east_corner(south: str, east: str) -> Tiling:
     for i, bit in enumerate(south):
         if bit not in ["0", "1"]:
             raise ValueError(f"South word {south} is not a binary string")
-        tiling[i, len(east) + 1] = SquareGlues(None, None, int(bit), None)
+        tiling[i, 0] = SquareGlues(int(bit), None, None, None)
 
     return Tiling(tiling, Collatz_tileset)
 
