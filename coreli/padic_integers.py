@@ -1,10 +1,10 @@
-""" Implementing p-adic integers.
+"""Implementing p-adic integers.
 
-    References
-    ========== 
+References
+==========
 
-    [1] Computations with p-adic numbers. Xavier Caruso. Preprint, 2017.
-        https://arxiv.org/abs/1701.06794
+[1] Computations with p-adic numbers. Xavier Caruso. Preprint, 2017.
+    https://arxiv.org/abs/1701.06794
 """
 
 from typing import Callable, List, Union, Dict, Tuple
@@ -114,12 +114,8 @@ class PadicInt(object):
 
         """
         self.p: int = p
-        self.digit_function: Callable[[int], int] = functools.lru_cache(
-            digit_function
-        )
-        self.underlying_rational: Union[
-            None, int, Rational
-        ] = underlying_rational
+        self.digit_function: Callable[[int], int] = functools.lru_cache(digit_function)
+        self.underlying_rational: Union[None, int, Rational] = underlying_rational
 
     def digits(self, n: int) -> List[int]:
         """Returns the first n digits of the number. Raises a value error if a digit is >= p."""
@@ -185,17 +181,13 @@ class PadicInt(object):
         # Updating the underlying rational if it is set for both operands
         underlying_rational = None
         if None not in (self.underlying_rational, other.underlying_rational):
-            underlying_rational = (
-                self.underlying_rational + other.underlying_rational
-            )
+            underlying_rational = self.underlying_rational + other.underlying_rational
 
         if (
             self.underlying_rational is not None
             and other.underlying_rational is not None
         ):
-            underlying_rational = (
-                self.underlying_rational + other.underlying_rational
-            )
+            underlying_rational = self.underlying_rational + other.underlying_rational
         return PadicInt(
             self.p,
             lambda n: addition_digit_function(n)[0],
@@ -259,17 +251,13 @@ class PadicInt(object):
         # Updating the underlying rational if it is set for both operands
         underlying_rational = None
         if None not in (self.underlying_rational, other.underlying_rational):
-            underlying_rational = (
-                self.underlying_rational * other.underlying_rational
-            )
+            underlying_rational = self.underlying_rational * other.underlying_rational
 
         if (
             self.underlying_rational is not None
             and other.underlying_rational is not None
         ):
-            underlying_rational = (
-                self.underlying_rational + other.underlying_rational
-            )
+            underlying_rational = self.underlying_rational + other.underlying_rational
         return PadicInt(
             self.p,
             lambda n: multiplication_digit_function(n)[0],
@@ -343,7 +331,9 @@ class PadicInt(object):
             underlying_rational=underlying_rational,
         )
 
-    def rational_periodic_representation(self, to_str = True) -> Union[str,Tuple[str,str]]:
+    def rational_periodic_representation(
+        self, to_str=True
+    ) -> Union[str, Tuple[str, str]]:
         """Rational p-adic integers are exactly the p-adics integers with eventually periodic representation. Hence we can write them (w1)* w0 with w0 and w1 finite base-p strings.
 
         [1] Keith Conrad. “The p-adic expansion of rational numbers”. https://kconrad.math.uconn.edu/blurbs/gradnumthy/rationalsinQp.pdf.
@@ -384,7 +374,8 @@ class PadicInt(object):
         k = 0
         while x.numerator not in seen_numerators:
             seen_numerators[x.numerator] = k
-            i = x.numerator % self.p
+            inverse = pow(x.denominator, -1, self.p)
+            i = (x.numerator * inverse) % self.p
             digit_list.append(i)
             x = (x - i) / self.p
             k += 1
@@ -400,8 +391,9 @@ class PadicInt(object):
 
         return w1, w0
 
-def least_significant_digit(x: Union[int, Rational, PadicInt], base = 2) -> int:
-    """ Returns the least significant digit of an integer in a base or rational p-adic or p-adic.
+
+def least_significant_digit(x: Union[int, Rational, PadicInt], base=2) -> int:
+    """Returns the least significant digit of an integer in a base or rational p-adic or p-adic.
 
     :Example:
         >>> least_significant_digit(25)
@@ -412,16 +404,16 @@ def least_significant_digit(x: Union[int, Rational, PadicInt], base = 2) -> int:
         >>> least_significant_digit(Rational(2,15))
         0
     """
-    if isinstance(x,int):
+    if isinstance(x, int):
         return x % base
 
-    if isinstance(x,Rational):
+    if isinstance(x, Rational):
         if gcd(base, x.denominator) == 1:
             return x.numerator % base
         else:
             raise ValueError(
                 f"Rational {x} cannot be expressed {base}-adically because its denominator is not co-prime with p."
             )
-    
+
     if isinstance(PadicInt):
         return x.digits(0)[0]

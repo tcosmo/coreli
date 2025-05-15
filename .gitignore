@@ -1,6 +1,11 @@
 playground
 examples_safe/*
 deploy_doc.sh
+
+Untitled.ipynb
+entropy/
+examples/Testing - Collatz 2-adic and rational cycles-Copy1.ipynb
+
 venv-coreli
 # Byte-compiled / optimized / DLL files
 __pycache__/
