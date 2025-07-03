@@ -1,0 +1,3570 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="599.71484"
+   height="253.74022"
+   viewBox="0 -128 599.71484 253.74022"
+   version="1.1"
+   id="svg59325"
+   sodipodi:docname="base3o2.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   inkscape:export-filename="base3o2.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview59327"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.5938152"
+     inkscape:cx="274.18487"
+     inkscape:cy="132.70046"
+     inkscape:window-width="1832"
+     inkscape:window-height="1094"
+     inkscape:window-x="453"
+     inkscape:window-y="423"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg59325"
+     inkscape:export-bgcolor="#ffffffff" />
+  <defs
+     id="defs58933">
+    <marker
+       style="overflow:visible"
+       id="marker5416-2-9-8-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path5414-0-2-9-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5416-2-9-8-9-03"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path5414-0-2-9-9-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5416-2-9-8-9-03-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path5414-0-2-9-9-4-6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5416-2-9-8-9-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path5414-0-2-9-9-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5416-2-9-8-9-0-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path5414-0-2-9-9-8-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5416-2-9-8-9-0-3-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path5414-0-2-9-9-8-1-9" />
+    </marker>
+  </defs>
+  <g
+     id="g59089"
+     transform="translate(169.84477,156.73955)">
+    <rect
+       x="0"
+       y="-64"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59065" />
+    <path
+       d="M 16,-48 0,-64 h 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59067" />
+    <path
+       d="m 16,-48 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59069" />
+    <path
+       d="m 16,-48 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59071" />
+    <path
+       d="M 16,-48 0,-32 v -32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59073" />
+    <path
+       d="M 0,-32 32,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59075" />
+    <path
+       d="M 32,-32 0,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59077" />
+    <text
+       x="16"
+       y="-59.799999"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59079">1</text>
+    <text
+       x="28.299999"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59081">1</text>
+    <text
+       x="16"
+       y="-36.200001"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59083">0</text>
+    <text
+       x="3.7"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59085">2</text>
+    <text
+       x="16"
+       y="-48.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59087">4</text>
+  </g>
+  <g
+     id="g59115"
+     transform="translate(169.84477,156.73955)">
+    <rect
+       x="64"
+       y="-96"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59091" />
+    <path
+       d="M 80,-80 64,-96 h 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59093" />
+    <path
+       d="m 80,-80 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59095" />
+    <path
+       d="m 80,-80 16,16 H 64 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59097" />
+    <path
+       d="M 80,-80 64,-64 V -96 Z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59099" />
+    <path
+       d="M 64,-64 96,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59101" />
+    <path
+       d="M 96,-64 64,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59103" />
+    <text
+       x="80"
+       y="-91.800003"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59105">1</text>
+    <text
+       x="92.300003"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59107">1</text>
+    <text
+       x="80"
+       y="-68.199997"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59109">0</text>
+    <text
+       x="67.699997"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59111">2</text>
+    <text
+       x="80"
+       y="-80.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59113">4</text>
+  </g>
+  <g
+     id="g59115-7"
+     transform="translate(233.91492,92.61268)">
+    <rect
+       x="64"
+       y="-96"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59091-8" />
+    <path
+       d="M 80,-80 64,-96 h 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59093-8" />
+    <path
+       d="m 80,-80 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59095-3" />
+    <path
+       d="m 80,-80 16,16 H 64 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59097-8" />
+    <path
+       d="M 80,-80 64,-64 V -96 Z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59099-1" />
+    <path
+       d="M 64,-64 96,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59101-5" />
+    <path
+       d="M 96,-64 64,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59103-3" />
+    <text
+       x="80"
+       y="-91.800003"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59105-5">1</text>
+    <text
+       x="92.300003"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59107-4">1</text>
+    <text
+       x="80"
+       y="-68.199997"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59109-3">0</text>
+    <text
+       x="67.699997"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59111-6">2</text>
+    <text
+       x="80"
+       y="-80.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59113-5">4</text>
+  </g>
+  <g
+     id="g59141"
+     transform="translate(169.84477,156.73955)">
+    <rect
+       x="32"
+       y="-96"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59117" />
+    <path
+       d="M 48,-80 32,-96 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59119" />
+    <path
+       d="m 48,-80 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59121" />
+    <path
+       d="m 48,-80 16,16 H 32 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59123" />
+    <path
+       d="M 48,-80 32,-64 V -96 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59125" />
+    <path
+       d="M 32,-64 64,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59127" />
+    <path
+       d="M 64,-64 32,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59129" />
+    <text
+       x="48"
+       y="-91.800003"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59131">0</text>
+    <text
+       x="60.299999"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59133">2</text>
+    <text
+       x="48"
+       y="-68.199997"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59135">0</text>
+    <text
+       x="35.700001"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59137">1</text>
+    <text
+       x="48"
+       y="-80.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59139">2</text>
+  </g>
+  <g
+     id="g59141-5"
+     transform="translate(265.36567,27.415666)">
+    <rect
+       x="32"
+       y="-96"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59117-2" />
+    <path
+       d="M 48,-80 32,-96 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59119-2" />
+    <path
+       d="m 48,-80 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59121-6" />
+    <path
+       d="m 48,-80 16,16 H 32 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59123-6" />
+    <path
+       d="M 48,-80 32,-64 V -96 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59125-7" />
+    <path
+       d="M 32,-64 64,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59127-8" />
+    <path
+       d="M 64,-64 32,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59129-4" />
+    <text
+       x="48"
+       y="-91.800003"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59131-1">0</text>
+    <text
+       x="60.299999"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59133-7">2</text>
+    <text
+       x="48"
+       y="-68.199997"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59135-1">0</text>
+    <text
+       x="35.700001"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59137-8">1</text>
+    <text
+       x="48"
+       y="-80.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59139-7">2</text>
+  </g>
+  <g
+     id="g59167"
+     transform="translate(169.84477,156.73955)">
+    <rect
+       x="0"
+       y="-96"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59143" />
+    <path
+       d="M 16,-80 0,-96 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59145" />
+    <path
+       d="m 16,-80 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59147" />
+    <path
+       d="m 16,-80 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59149" />
+    <path
+       d="M 16,-80 0,-64 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59151" />
+    <path
+       d="M 0,-64 32,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59153" />
+    <path
+       d="M 32,-64 0,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59155" />
+    <text
+       x="16"
+       y="-91.800003"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59157">0</text>
+    <text
+       x="28.299999"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59159">1</text>
+    <text
+       x="16"
+       y="-68.199997"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59161">1</text>
+    <text
+       x="3.7"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59163">0</text>
+    <text
+       x="16"
+       y="-80.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59165">1</text>
+  </g>
+  <g
+     id="g59167-9"
+     transform="translate(297.68246,60.260441)">
+    <rect
+       x="0"
+       y="-96"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59143-5" />
+    <path
+       d="M 16,-80 0,-96 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59145-4" />
+    <path
+       d="m 16,-80 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59147-9" />
+    <path
+       d="m 16,-80 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59149-1" />
+    <path
+       d="M 16,-80 0,-64 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59151-7" />
+    <path
+       d="M 0,-64 32,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59153-5" />
+    <path
+       d="M 32,-64 0,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59155-5" />
+    <text
+       x="16"
+       y="-91.800003"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59157-4">0</text>
+    <text
+       x="28.299999"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59159-1">1</text>
+    <text
+       x="16"
+       y="-68.199997"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59161-8">1</text>
+    <text
+       x="3.7"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59163-8">0</text>
+    <text
+       x="16"
+       y="-80.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59165-3">1</text>
+  </g>
+  <g
+     id="g59167-9-5"
+     transform="translate(265.36567,28.035066)">
+    <rect
+       x="0"
+       y="-96"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59143-5-9" />
+    <path
+       d="M 16,-80 0,-96 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59145-4-7" />
+    <path
+       d="m 16,-80 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59147-9-5" />
+    <path
+       d="m 16,-80 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59149-1-3" />
+    <path
+       d="M 16,-80 0,-64 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59151-7-9" />
+    <path
+       d="M 0,-64 32,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59153-5-0" />
+    <path
+       d="M 32,-64 0,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59155-5-5" />
+    <text
+       x="16"
+       y="-91.800003"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59157-4-5">0</text>
+    <text
+       x="28.299999"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59159-1-6">1</text>
+    <text
+       x="16"
+       y="-68.199997"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59161-8-3">1</text>
+    <text
+       x="3.7"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59163-8-2">0</text>
+    <text
+       x="16"
+       y="-80.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59165-3-68">1</text>
+  </g>
+  <g
+     id="g59167-9-9"
+     transform="translate(170.37276,92.781326)">
+    <rect
+       x="0"
+       y="-96"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59143-5-5" />
+    <path
+       d="M 16,-80 0,-96 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59145-4-6" />
+    <path
+       d="m 16,-80 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59147-9-2" />
+    <path
+       d="m 16,-80 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59149-1-8" />
+    <path
+       d="M 16,-80 0,-64 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59151-7-5" />
+    <path
+       d="M 0,-64 32,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59153-5-9" />
+    <path
+       d="M 32,-64 0,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59155-5-4" />
+    <text
+       x="16"
+       y="-91.800003"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59157-4-3">0</text>
+    <text
+       x="28.299999"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59159-1-9">1</text>
+    <text
+       x="16"
+       y="-68.199997"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59161-8-0">1</text>
+    <text
+       x="3.7"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59163-8-5">0</text>
+    <text
+       x="16"
+       y="-80.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59165-3-6">1</text>
+  </g>
+  <g
+     id="g59167-8"
+     transform="translate(329.89439,-4.6418041)">
+    <rect
+       x="0"
+       y="-96"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59143-6" />
+    <path
+       d="M 16,-80 0,-96 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59145-5" />
+    <path
+       d="m 16,-80 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59147-7" />
+    <path
+       d="m 16,-80 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59149-6" />
+    <path
+       d="M 16,-80 0,-64 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59151-2" />
+    <path
+       d="M 0,-64 32,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59153-7" />
+    <path
+       d="M 32,-64 0,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59155-0" />
+    <text
+       x="16"
+       y="-91.800003"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59157-3">0</text>
+    <text
+       x="28.299999"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59159-9">1</text>
+    <text
+       x="16"
+       y="-68.199997"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59161-9">1</text>
+    <text
+       x="3.7"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59163-9">0</text>
+    <text
+       x="16"
+       y="-80.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59165-1">1</text>
+  </g>
+  <g
+     id="g59167-8-0"
+     transform="translate(233.87947,60.366038)">
+    <rect
+       x="0"
+       y="-96"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59143-6-0" />
+    <path
+       d="M 16,-80 0,-96 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59145-5-9" />
+    <path
+       d="m 16,-80 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59147-7-3" />
+    <path
+       d="m 16,-80 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59149-6-7" />
+    <path
+       d="M 16,-80 0,-64 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59151-2-5" />
+    <path
+       d="M 0,-64 32,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59153-7-7" />
+    <path
+       d="M 32,-64 0,-96"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59155-0-2" />
+    <text
+       x="16"
+       y="-91.800003"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59157-3-9">0</text>
+    <text
+       x="28.299999"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59159-9-7">1</text>
+    <text
+       x="16"
+       y="-68.199997"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59161-9-5">1</text>
+    <text
+       x="3.7"
+       y="-80"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59163-9-6">0</text>
+    <text
+       x="16"
+       y="-80.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59165-1-5">1</text>
+  </g>
+  <g
+     id="g59193"
+     transform="translate(169.84477,156.73955)">
+    <rect
+       x="160"
+       y="-128"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59169" />
+    <path
+       d="m 176,-112 -16,-16 h 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59171" />
+    <path
+       d="m 176,-112 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59173" />
+    <path
+       d="m 176,-112 16,16 h -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59175" />
+    <path
+       d="m 176,-112 -16,16 v -32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59177" />
+    <path
+       d="m 160,-96 32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59179" />
+    <path
+       d="m 192,-96 -32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59181" />
+    <text
+       x="176"
+       y="-123.8"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59183">1</text>
+    <text
+       x="188.3"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59185">1</text>
+    <text
+       x="176"
+       y="-100.2"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59187">0</text>
+    <text
+       x="163.7"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59189">2</text>
+    <text
+       x="176"
+       y="-112.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59191">4</text>
+  </g>
+  <g
+     id="g59219"
+     transform="translate(169.84477,156.73955)">
+    <rect
+       x="128"
+       y="-128"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59195" />
+    <path
+       d="m 144,-112 -16,-16 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59197" />
+    <path
+       d="m 144,-112 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59199" />
+    <path
+       d="m 144,-112 16,16 h -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59201" />
+    <path
+       d="m 144,-112 -16,16 v -32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59203" />
+    <path
+       d="m 128,-96 32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59205" />
+    <path
+       d="m 160,-96 -32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59207" />
+    <text
+       x="144"
+       y="-123.8"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59209">0</text>
+    <text
+       x="156.3"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59211">2</text>
+    <text
+       x="144"
+       y="-100.2"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59213">0</text>
+    <text
+       x="131.7"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59215">1</text>
+    <text
+       x="144"
+       y="-112.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59217">2</text>
+  </g>
+  <g
+     id="g59245"
+     transform="translate(169.84477,156.73955)">
+    <rect
+       x="96"
+       y="-128"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59221" />
+    <path
+       d="m 112,-112 -16,-16 h 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59223" />
+    <path
+       d="m 112,-112 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59225" />
+    <path
+       d="m 112,-112 16,16 H 96 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59227" />
+    <path
+       d="m 112,-112 -16,16 v -32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59229" />
+    <path
+       d="m 96,-96 32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59231" />
+    <path
+       d="M 128,-96 96,-128"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59233" />
+    <text
+       x="112"
+       y="-123.8"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59235">1</text>
+    <text
+       x="124.3"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59237">1</text>
+    <text
+       x="112"
+       y="-100.2"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59239">0</text>
+    <text
+       x="99.699997"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59241">2</text>
+    <text
+       x="112"
+       y="-112.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59243">4</text>
+  </g>
+  <g
+     id="g59271"
+     transform="translate(169.84477,156.73955)">
+    <rect
+       x="64"
+       y="-128"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59247" />
+    <path
+       d="M 80,-112 64,-128 H 96 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59249" />
+    <path
+       d="m 80,-112 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59251" />
+    <path
+       d="m 80,-112 16,16 H 64 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59253" />
+    <path
+       d="m 80,-112 -16,16 v -32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59255" />
+    <path
+       d="m 64,-96 32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59257" />
+    <path
+       d="M 96,-96 64,-128"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59259" />
+    <text
+       x="80"
+       y="-123.8"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59261">1</text>
+    <text
+       x="92.300003"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59263">2</text>
+    <text
+       x="80"
+       y="-100.2"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59265">1</text>
+    <text
+       x="67.699997"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59267">2</text>
+    <text
+       x="80"
+       y="-112.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59269">5</text>
+  </g>
+  <g
+     id="g59271-2"
+     transform="translate(170.16865,124.71828)">
+    <rect
+       x="64"
+       y="-128"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59247-0" />
+    <path
+       d="M 80,-112 64,-128 H 96 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59249-74" />
+    <path
+       d="m 80,-112 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59251-8" />
+    <path
+       d="m 80,-112 16,16 H 64 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59253-5" />
+    <path
+       d="m 80,-112 -16,16 v -32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59255-8" />
+    <path
+       d="m 64,-96 32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59257-30" />
+    <path
+       d="M 96,-96 64,-128"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59259-6" />
+    <text
+       x="80"
+       y="-123.8"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59261-2">1</text>
+    <text
+       x="92.300003"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59263-2">2</text>
+    <text
+       x="80"
+       y="-100.2"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59265-5">1</text>
+    <text
+       x="67.699997"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59267-2">2</text>
+    <text
+       x="80"
+       y="-112.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59269-2">5</text>
+  </g>
+  <g
+     id="g59271-8"
+     transform="translate(201.84477,124.61268)">
+    <rect
+       x="64"
+       y="-128"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59247-7" />
+    <path
+       d="M 80,-112 64,-128 H 96 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59249-7" />
+    <path
+       d="m 80,-112 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59251-44" />
+    <path
+       d="m 80,-112 16,16 H 64 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59253-9" />
+    <path
+       d="m 80,-112 -16,16 v -32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59255-1" />
+    <path
+       d="m 64,-96 32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59257-5" />
+    <path
+       d="M 96,-96 64,-128"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59259-5" />
+    <text
+       x="80"
+       y="-123.8"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59261-5">1</text>
+    <text
+       x="92.300003"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59263-8">2</text>
+    <text
+       x="80"
+       y="-100.2"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59265-2">1</text>
+    <text
+       x="67.699997"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59267-9">2</text>
+    <text
+       x="80"
+       y="-112.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59269-8">5</text>
+  </g>
+  <g
+     id="g59271-4"
+     transform="translate(266.33806,59.105216)">
+    <rect
+       x="64"
+       y="-128"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59247-8" />
+    <path
+       d="M 80,-112 64,-128 H 96 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59249-0" />
+    <path
+       d="m 80,-112 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59251-4" />
+    <path
+       d="m 80,-112 16,16 H 64 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59253-6" />
+    <path
+       d="m 80,-112 -16,16 v -32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59255-0" />
+    <path
+       d="m 64,-96 32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59257-3" />
+    <path
+       d="M 96,-96 64,-128"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59259-2" />
+    <text
+       x="80"
+       y="-123.8"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59261-6">1</text>
+    <text
+       x="92.300003"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59263-9">2</text>
+    <text
+       x="80"
+       y="-100.2"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59265-4">1</text>
+    <text
+       x="67.699997"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59267-1">2</text>
+    <text
+       x="80"
+       y="-112.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59269-3">5</text>
+  </g>
+  <g
+     id="g59297"
+     transform="translate(169.84477,156.73955)">
+    <rect
+       x="32"
+       y="-128"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59273" />
+    <path
+       d="M 48,-112 32,-128 H 64 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59275" />
+    <path
+       d="m 48,-112 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59277" />
+    <path
+       d="m 48,-112 16,16 H 32 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59279" />
+    <path
+       d="m 48,-112 -16,16 v -32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59281" />
+    <path
+       d="m 32,-96 32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59283" />
+    <path
+       d="M 64,-96 32,-128"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59285" />
+    <text
+       x="48"
+       y="-123.8"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59287">0</text>
+    <text
+       x="60.299999"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59289">2</text>
+    <text
+       x="48"
+       y="-100.2"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59291">0</text>
+    <text
+       x="35.700001"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59293">1</text>
+    <text
+       x="48"
+       y="-112.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59295">2</text>
+  </g>
+  <g
+     id="g59297-73"
+     transform="translate(330.86678,27.358196)">
+    <rect
+       x="32"
+       y="-128"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59273-9" />
+    <path
+       d="M 48,-112 32,-128 H 64 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59275-7" />
+    <path
+       d="m 48,-112 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59277-7" />
+    <path
+       d="m 48,-112 16,16 H 32 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59279-9" />
+    <path
+       d="m 48,-112 -16,16 v -32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59281-5" />
+    <path
+       d="m 32,-96 32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59283-3" />
+    <path
+       d="M 64,-96 32,-128"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59285-3" />
+    <text
+       x="48"
+       y="-123.8"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59287-3">0</text>
+    <text
+       x="60.299999"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59289-8">2</text>
+    <text
+       x="48"
+       y="-100.2"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59291-5">0</text>
+    <text
+       x="35.700001"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59293-8">1</text>
+    <text
+       x="48"
+       y="-112.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59295-9">2</text>
+  </g>
+  <g
+     id="g59297-7"
+     transform="translate(169.725,124.72537)">
+    <rect
+       x="32"
+       y="-128"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59273-1" />
+    <path
+       d="M 48,-112 32,-128 H 64 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59275-5" />
+    <path
+       d="m 48,-112 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59277-2" />
+    <path
+       d="m 48,-112 16,16 H 32 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59279-1" />
+    <path
+       d="m 48,-112 -16,16 v -32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59281-1" />
+    <path
+       d="m 32,-96 32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59283-0" />
+    <path
+       d="M 64,-96 32,-128"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59285-1" />
+    <text
+       x="48"
+       y="-123.8"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59287-8">0</text>
+    <text
+       x="60.299999"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59289-7">2</text>
+    <text
+       x="48"
+       y="-100.2"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59291-6">0</text>
+    <text
+       x="35.700001"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59293-0">1</text>
+    <text
+       x="48"
+       y="-112.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59295-0">2</text>
+  </g>
+  <g
+     id="g59323"
+     transform="translate(169.84477,156.73955)">
+    <rect
+       x="0"
+       y="-128"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect59299" />
+    <path
+       d="M 16,-112 0,-128 h 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59301" />
+    <path
+       d="m 16,-112 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path59303" />
+    <path
+       d="m 16,-112 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path59305" />
+    <path
+       d="M 16,-112 0,-96 v -32 z"
+       stroke-width="1"
+       fill="#e37998"
+       fill-opacity="1"
+       id="path59307" />
+    <path
+       d="m 0,-96 32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59309" />
+    <path
+       d="M 32,-96 0,-128"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path59311" />
+    <text
+       x="16"
+       y="-123.8"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59313">1</text>
+    <text
+       x="28.299999"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59315">1</text>
+    <text
+       x="16"
+       y="-100.2"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59317">0</text>
+    <text
+       x="3.7"
+       y="-112"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59319">2</text>
+    <text
+       x="16"
+       y="-112.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text59321">4</text>
+  </g>
+  <g
+     id="g75279"
+     transform="translate(107.85434,241.64669)">
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:3.26929;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.62233;marker-end:url(#marker5416-2-9-8-9)"
+       d="m 254.55707,-211.85235 -27.84469,27.83482"
+       id="path5040-2-2-7"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:3.26929;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.62233;marker-end:url(#marker5416-2-9-8-9-03)"
+       d="m 157.49166,-179.49507 -27.84469,27.83482"
+       id="path5040-2-2-7-0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:3.26929;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.62233;marker-end:url(#marker5416-2-9-8-9-03-9)"
+       d="m 92.565671,-147.18421 -27.84469,27.83482"
+       id="path5040-2-2-7-0-9"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:3.26929;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.62233;marker-end:url(#marker5416-2-9-8-9-0)"
+       d="m 222.85089,-180.57868 -28.55968,-0.007"
+       id="path5040-2-2-7-1"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:3.26929;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.62233;marker-end:url(#marker5416-2-9-8-9-0-3)"
+       d="m 190.62878,-180.57869 -28.55968,-0.007"
+       id="path5040-2-2-7-1-1"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:3.26929;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.62233;marker-end:url(#marker5416-2-9-8-9-0-3-3)"
+       d="m 125.68635,-147.47574 -28.559684,-0.007"
+       id="path5040-2-2-7-1-1-1"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     id="g106"
+     transform="translate(330.34477,28.239546)">
+    <rect
+       x="0"
+       y="-32"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect82" />
+    <path
+       d="M 16,-16 0,-32 h 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path84" />
+    <path
+       d="M 16,-16 32,-32 V 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path86" />
+    <path
+       d="M 16,-16 32,0 H 0 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path88" />
+    <path
+       d="M 16,-16 0,0 v -32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path90" />
+    <path
+       d="M 0,0 32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path92" />
+    <path
+       d="M 32,0 0,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path94" />
+    <text
+       x="16"
+       y="-27.799999"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text96">1</text>
+    <text
+       x="28.299999"
+       y="-16"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text98">0</text>
+    <text
+       x="16"
+       y="-4.1999998"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text100">1</text>
+    <text
+       x="3.7"
+       y="-16"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text102">1</text>
+    <text
+       x="16"
+       y="-16.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text104">3</text>
+  </g>
+  <g
+     id="g106-3"
+     transform="translate(265.2388,-3.7182941)">
+    <rect
+       x="0"
+       y="-32"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect82-0" />
+    <path
+       d="M 16,-16 0,-32 h 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path84-8" />
+    <path
+       d="M 16,-16 32,-32 V 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path86-4" />
+    <path
+       d="M 16,-16 32,0 H 0 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path88-0" />
+    <path
+       d="M 16,-16 0,0 v -32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path90-4" />
+    <path
+       d="M 0,0 32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path92-6" />
+    <path
+       d="M 32,0 0,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path94-4" />
+    <text
+       x="16"
+       y="-27.799999"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text96-6">1</text>
+    <text
+       x="28.299999"
+       y="-16"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text98-4">0</text>
+    <text
+       x="16"
+       y="-4.1999998"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text100-3">1</text>
+    <text
+       x="3.7"
+       y="-16"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text102-8">1</text>
+    <text
+       x="16"
+       y="-16.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text104-4">3</text>
+  </g>
+  <g
+     id="g106-7"
+     transform="translate(330.34477,-4.2604541)">
+    <rect
+       x="0"
+       y="-32"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect82-2" />
+    <path
+       d="M 16,-16 0,-32 h 32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path84-3" />
+    <path
+       d="M 16,-16 32,-32 V 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path86-6" />
+    <path
+       d="M 16,-16 32,0 H 0 Z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path88-5" />
+    <path
+       d="M 16,-16 0,0 v -32 z"
+       stroke-width="1"
+       fill="#0ac52e"
+       fill-opacity="1"
+       id="path90-5" />
+    <path
+       d="M 0,0 32,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path92-8" />
+    <path
+       d="M 32,0 0,-32"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path94-1" />
+    <text
+       x="16"
+       y="-27.799999"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text96-4">1</text>
+    <text
+       x="28.299999"
+       y="-16"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text98-7">0</text>
+    <text
+       x="16"
+       y="-4.1999998"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text100-1">1</text>
+    <text
+       x="3.7"
+       y="-16"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text102-3">1</text>
+    <text
+       x="16"
+       y="-16.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text104-8">3</text>
+  </g>
+  <g
+     id="g28"
+     transform="translate(297.36566,-36.584334)">
+    <rect
+       x="0"
+       y="-64"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect4" />
+    <path
+       d="M 16,-48 0,-64 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path6" />
+    <path
+       d="m 16,-48 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path8" />
+    <path
+       d="m 16,-48 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path10" />
+    <path
+       d="M 16,-48 0,-32 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path12" />
+    <path
+       d="M 0,-32 32,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path14" />
+    <path
+       d="M 32,-32 0,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path16" />
+    <text
+       x="16"
+       y="-59.799999"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text18">0</text>
+    <text
+       x="28.299999"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text20">0</text>
+    <text
+       x="16"
+       y="-36.200001"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text22">0</text>
+    <text
+       x="3.7"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text24">0</text>
+    <text
+       x="16"
+       y="-48.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text26">0</text>
+  </g>
+  <g
+     id="g28-3"
+     transform="translate(201.77462,28.302226)">
+    <rect
+       x="0"
+       y="-64"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect4-0" />
+    <path
+       d="M 16,-48 0,-64 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path6-4" />
+    <path
+       d="m 16,-48 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path8-8" />
+    <path
+       d="m 16,-48 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path10-5" />
+    <path
+       d="M 16,-48 0,-32 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path12-5" />
+    <path
+       d="M 0,-32 32,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path14-5" />
+    <path
+       d="M 32,-32 0,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path16-4" />
+    <text
+       x="16"
+       y="-59.799999"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text18-2">0</text>
+    <text
+       x="28.299999"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text20-1">0</text>
+    <text
+       x="16"
+       y="-36.200001"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text22-9">0</text>
+    <text
+       x="3.7"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text24-2">0</text>
+    <text
+       x="16"
+       y="-48.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text26-4">0</text>
+  </g>
+  <g
+     id="g28-5"
+     transform="translate(170.14029,28.478726)">
+    <rect
+       x="0"
+       y="-64"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect4-8" />
+    <path
+       d="M 16,-48 0,-64 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path6-6" />
+    <path
+       d="m 16,-48 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path8-2" />
+    <path
+       d="m 16,-48 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path10-51" />
+    <path
+       d="M 16,-48 0,-32 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path12-3" />
+    <path
+       d="M 0,-32 32,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path14-9" />
+    <path
+       d="M 32,-32 0,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path16-7" />
+    <text
+       x="16"
+       y="-59.799999"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text18-3">0</text>
+    <text
+       x="28.299999"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text20-7">0</text>
+    <text
+       x="16"
+       y="-36.200001"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text22-5">0</text>
+    <text
+       x="3.7"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text24-0">0</text>
+    <text
+       x="16"
+       y="-48.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text26-2">0</text>
+  </g>
+  <g
+     id="g28-1"
+     transform="translate(233.58607,-3.9858241)">
+    <rect
+       x="0"
+       y="-64"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect4-87" />
+    <path
+       d="M 16,-48 0,-64 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path6-1" />
+    <path
+       d="m 16,-48 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path8-5" />
+    <path
+       d="m 16,-48 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path10-58" />
+    <path
+       d="M 16,-48 0,-32 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path12-56" />
+    <path
+       d="M 0,-32 32,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path14-7" />
+    <path
+       d="M 32,-32 0,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path16-9" />
+    <text
+       x="16"
+       y="-59.799999"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text18-4">0</text>
+    <text
+       x="28.299999"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text20-16">0</text>
+    <text
+       x="16"
+       y="-36.200001"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text22-1">0</text>
+    <text
+       x="3.7"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text24-20">0</text>
+    <text
+       x="16"
+       y="-48.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text26-44">0</text>
+  </g>
+  <g
+     id="g28-1-4"
+     transform="translate(202.60522,-3.7253841)">
+    <rect
+       x="0"
+       y="-64"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect4-87-0" />
+    <path
+       d="M 16,-48 0,-64 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path6-1-7" />
+    <path
+       d="m 16,-48 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path8-5-5" />
+    <path
+       d="m 16,-48 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path10-58-7" />
+    <path
+       d="M 16,-48 0,-32 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path12-56-5" />
+    <path
+       d="M 0,-32 32,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path14-7-0" />
+    <path
+       d="M 32,-32 0,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path16-9-6" />
+    <text
+       x="16"
+       y="-59.799999"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text18-4-4">0</text>
+    <text
+       x="28.299999"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text20-16-7">0</text>
+    <text
+       x="16"
+       y="-36.200001"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text22-1-8">0</text>
+    <text
+       x="3.7"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text24-20-4">0</text>
+    <text
+       x="16"
+       y="-48.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text26-44-0">0</text>
+  </g>
+  <g
+     id="g28-1-0"
+     transform="translate(170.4791,-3.5283641)">
+    <rect
+       x="0"
+       y="-64"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect4-87-6" />
+    <path
+       d="M 16,-48 0,-64 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path6-1-2" />
+    <path
+       d="m 16,-48 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path8-5-4" />
+    <path
+       d="m 16,-48 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path10-58-74" />
+    <path
+       d="M 16,-48 0,-32 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path12-56-1" />
+    <path
+       d="M 0,-32 32,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path14-7-8" />
+    <path
+       d="M 32,-32 0,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path16-9-5" />
+    <text
+       x="16"
+       y="-59.799999"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text18-4-8">0</text>
+    <text
+       x="28.299999"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text20-16-9">0</text>
+    <text
+       x="16"
+       y="-36.200001"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text22-1-9">0</text>
+    <text
+       x="3.7"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text24-20-9">0</text>
+    <text
+       x="16"
+       y="-48.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text26-44-3">0</text>
+  </g>
+  <g
+     id="g28-1-3"
+     transform="translate(265.18283,-36.366054)">
+    <rect
+       x="0"
+       y="-64"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect4-87-7" />
+    <path
+       d="M 16,-48 0,-64 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path6-1-73" />
+    <path
+       d="m 16,-48 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path8-5-2" />
+    <path
+       d="m 16,-48 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path10-58-5" />
+    <path
+       d="M 16,-48 0,-32 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path12-56-6" />
+    <path
+       d="M 0,-32 32,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path14-7-3" />
+    <path
+       d="M 32,-32 0,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path16-9-4" />
+    <text
+       x="16"
+       y="-59.799999"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text18-4-0">0</text>
+    <text
+       x="28.299999"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text20-16-6">0</text>
+    <text
+       x="16"
+       y="-36.200001"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text22-1-0">0</text>
+    <text
+       x="3.7"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text24-20-40">0</text>
+    <text
+       x="16"
+       y="-48.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text26-44-5">0</text>
+  </g>
+  <g
+     id="g28-1-6"
+     transform="translate(233.97164,-36.161954)">
+    <rect
+       x="0"
+       y="-64"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect4-87-8" />
+    <path
+       d="M 16,-48 0,-64 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path6-1-5" />
+    <path
+       d="m 16,-48 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path8-5-3" />
+    <path
+       d="m 16,-48 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path10-58-76" />
+    <path
+       d="M 16,-48 0,-32 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path12-56-8" />
+    <path
+       d="M 0,-32 32,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path14-7-6" />
+    <path
+       d="M 32,-32 0,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path16-9-7" />
+    <text
+       x="16"
+       y="-59.799999"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text18-4-1">0</text>
+    <text
+       x="28.299999"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text20-16-8">0</text>
+    <text
+       x="16"
+       y="-36.200001"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text22-1-4">0</text>
+    <text
+       x="3.7"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text24-20-97">0</text>
+    <text
+       x="16"
+       y="-48.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text26-44-31">0</text>
+  </g>
+  <g
+     id="g28-1-02"
+     transform="translate(202.64776,-35.767914)">
+    <rect
+       x="0"
+       y="-64"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect4-87-3" />
+    <path
+       d="M 16,-48 0,-64 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path6-1-71" />
+    <path
+       d="m 16,-48 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path8-5-8" />
+    <path
+       d="m 16,-48 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path10-58-9" />
+    <path
+       d="M 16,-48 0,-32 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path12-56-3" />
+    <path
+       d="M 0,-32 32,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path14-7-7" />
+    <path
+       d="M 32,-32 0,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path16-9-48" />
+    <text
+       x="16"
+       y="-59.799999"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text18-4-04">0</text>
+    <text
+       x="28.299999"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text20-16-0">0</text>
+    <text
+       x="16"
+       y="-36.200001"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text22-1-5">0</text>
+    <text
+       x="3.7"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text24-20-7">0</text>
+    <text
+       x="16"
+       y="-48.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text26-44-00">0</text>
+  </g>
+  <g
+     id="g28-1-5"
+     transform="translate(170.85895,-35.859334)">
+    <rect
+       x="0"
+       y="-64"
+       width="32"
+       height="32"
+       stroke="#808080"
+       stroke-width="1"
+       id="rect4-87-67" />
+    <path
+       d="M 16,-48 0,-64 h 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path6-1-8" />
+    <path
+       d="m 16,-48 16,-16 v 32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path8-5-0" />
+    <path
+       d="m 16,-48 16,16 H 0 Z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path10-58-6" />
+    <path
+       d="M 16,-48 0,-32 v -32 z"
+       stroke-width="1"
+       fill="#e6c58f"
+       fill-opacity="1"
+       id="path12-56-57" />
+    <path
+       d="M 0,-32 32,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path14-7-34" />
+    <path
+       d="M 32,-32 0,-64"
+       stroke-width="0.4"
+       stroke="#808080"
+       fill-opacity="0"
+       id="path16-9-3" />
+    <text
+       x="16"
+       y="-59.799999"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text18-4-048">0</text>
+    <text
+       x="28.299999"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text20-16-75">0</text>
+    <text
+       x="16"
+       y="-36.200001"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text22-1-95">0</text>
+    <text
+       x="3.7"
+       y="-48"
+       font-size="8px"
+       fill="#000000"
+       text-anchor="middle"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text24-20-3">0</text>
+    <text
+       x="16"
+       y="-48.5"
+       font-size="16px"
+       fill="#000000"
+       text-anchor="middle"
+       font-weight="bold"
+       font-family="Arimo"
+       dy="0.40000001em"
+       id="text26-44-2">0</text>
+  </g>
+  <ellipse
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.265;stroke-dasharray:none;stroke-opacity:1"
+     id="path2"
+     cx="-173.50604"
+     cy="74.775826"
+     rx="8.8020658"
+     ry="45.112038"
+     transform="scale(-1,1)" />
+  <ellipse
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.09939;stroke-opacity:1"
+     id="path2-0"
+     cx="-362.03583"
+     cy="-37.476765"
+     rx="8.63484"
+     ry="65.065338"
+     transform="scale(-1,1)" />
+  <ellipse
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.78671;stroke-opacity:1"
+     id="path2-0-61"
+     cx="-236.64032"
+     cy="188.88329"
+     rx="11.465284"
+     ry="86.340721"
+     transform="matrix(-0.68928975,0.72448578,0.70480047,0.70940559,0,0)" />
+  <ellipse
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.60204;stroke-opacity:1"
+     id="path2-0-6"
+     cx="29.76465"
+     cy="262.81247"
+     rx="8.6367254"
+     ry="99.930443"
+     transform="matrix(0.02752845,0.99962102,0.99993188,-0.01167186,0,0)" />
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:17.3333px;line-height:0;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0.5px;word-spacing:0px;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.44535;stroke-opacity:1"
+     x="-0.43163979"
+     y="88.762909"
+     id="text2"><tspan
+       sodipodi:role="line"
+       id="tspan2"
+       x="-0.43163979"
+       y="88.762909"
+       style="fill:#000000;fill-opacity:1;stroke:none">20 in base 3: '202'</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:17.3333px;line-height:0;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0.5px;word-spacing:0px;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.44535;stroke-opacity:1"
+     x="378.57544"
+     y="-14.137094"
+     id="text2-0"><tspan
+       sodipodi:role="line"
+       id="tspan2-3"
+       x="378.57544"
+       y="-14.137094"
+       style="fill:#000000;fill-opacity:1;stroke:none">45 in base 3: '1200'</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:17.3333px;line-height:0;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0.5px;word-spacing:0px;fill:#ff00ff;fill-opacity:1;stroke:#000000;stroke-width:2.44535;stroke-opacity:1"
+     x="386.28583"
+     y="-110.98891"
+     id="text2-0-0"><tspan
+       sodipodi:role="line"
+       id="tspan2-3-7"
+       x="386.28583"
+       y="-110.98891"
+       style="fill:#ff00ff;fill-opacity:1;stroke:none">20 in base 3/2: '2515524'</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:17.3333px;line-height:0;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0.5px;word-spacing:0px;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.44535;stroke-opacity:1"
+     x="117.02395"
+     y="-109.7575"
+     id="text2-0-4"><tspan
+       sodipodi:role="line"
+       id="tspan2-3-08"
+       x="117.02395"
+       y="-109.7575"
+       style="fill:#000000;fill-opacity:1;stroke:none">45 in base 6: '113'</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:17.3333px;line-height:0;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0.5px;word-spacing:0px;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.44535;stroke-opacity:1"
+     x="54.77565"
+     y="34.461025"
+     id="text2-0-9"><tspan
+       sodipodi:role="line"
+       id="tspan2-3-0"
+       x="54.77565"
+       y="34.461025"
+       style="fill:#000000;fill-opacity:1;stroke:none">45 in base 2</tspan></text>
+  <g
+     id="g1"
+     transform="translate(13.919143)">
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:17.3333px;line-height:0;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0.5px;word-spacing:0px;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.44535;stroke-opacity:1"
+       x="300.35727"
+       y="90.208672"
+       id="text2-0-0-94"><tspan
+         sodipodi:role="line"
+         id="tspan2-3-4"
+         x="300.35727"
+         y="90.208672"
+         style="fill:#000000;fill-opacity:1;stroke:none">20 = T^6(45)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:9.99135px;line-height:0;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0.288212px;word-spacing:0px;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.40956;stroke-opacity:1"
+       x="272.13538"
+       y="110.08861"
+       id="text2-0-0-9"
+       transform="scale(1.0062016,0.99383663)"><tspan
+         sodipodi:role="line"
+         id="tspan2-3-4-1"
+         x="272.13538"
+         y="110.08861"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.40956">Blue arrows: Collatz parity vector</tspan></text>
+  </g>
+  <ellipse
+     style="fill:none;fill-opacity:1;stroke:#ff00ff;stroke-width:3.248;stroke-dasharray:none;stroke-opacity:1"
+     id="path3"
+     transform="rotate(-44.171861)"
+     ry="10.362687"
+     rx="162.37836"
+     cy="205.15005"
+     cx="190.02148" />
+</svg>

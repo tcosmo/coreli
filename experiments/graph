@@ -1,0 +1,303 @@
+digraph {
+	fontsize=10 rankdir=LR
+	"(0, 0, 0, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 0, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 0, 0, 1)" -> "(1, 0, 0, 0, 0, 0)"
+	"(0, 0, 0, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 0, 0, 0, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 0, 0, 2)" -> "(2, 0, 0, 0, 0, 0)"
+	"(0, 0, 0, 0, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 0, 1, 0)" -> "(0, 0, 0, 0, 0, 1)"
+	"(0, 0, 0, 0, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 0, 1, 1)" -> "(1, 0, 0, 0, 0, 1)"
+	"(0, 0, 0, 0, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 0, 0, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 0, 1, 2)" -> "(2, 0, 0, 0, 0, 1)"
+	"(0, 0, 0, 0, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 0, 2, 0)" -> "(0, 0, 0, 0, 0, 2)"
+	"(0, 0, 0, 0, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 0, 2, 1)" -> "(1, 0, 0, 0, 0, 2)"
+	"(0, 0, 0, 0, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 0, 0, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 0, 2, 2)" -> "(2, 0, 0, 0, 0, 2)"
+	"(0, 0, 0, 1, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 1, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 1, 0, 0)" -> "(0, 0, 0, 1, 1, 0)"
+	"(0, 0, 0, 1, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 1, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 1, 0, 1)" -> "(1, 0, 0, 1, 1, 0)"
+	"(0, 0, 0, 1, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 0, 0, 1, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 1, 0, 2)" -> "(2, 0, 0, 1, 1, 0)"
+	"(0, 0, 0, 1, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 1, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 1, 1, 0)" -> "(0, 0, 0, 1, 1, 1)"
+	"(0, 0, 0, 1, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 1, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 1, 1, 1)" -> "(1, 0, 0, 1, 1, 1)"
+	"(0, 0, 0, 1, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 0, 0, 1, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 1, 1, 2)" -> "(2, 0, 0, 1, 1, 1)"
+	"(0, 0, 0, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 1, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 1, 2, 0)" -> "(0, 0, 0, 1, 1, 2)"
+	"(0, 0, 0, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 1, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 1, 2, 1)" -> "(1, 0, 0, 1, 1, 2)"
+	"(0, 0, 0, 1, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 0, 0, 1, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 0, 1, 2, 2)" -> "(2, 0, 0, 1, 1, 2)"
+	"(0, 0, 1, 0, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 0, 0, 0)" -> "(0, 0, 1, 1, 2, 0)"
+	"(0, 0, 1, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 0, 0, 1)" -> "(1, 0, 1, 1, 2, 0)"
+	"(0, 0, 1, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 0, 1, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 0, 0, 2)" -> "(2, 0, 1, 1, 2, 0)"
+	"(0, 0, 1, 0, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 0, 1, 0)" -> "(0, 0, 1, 1, 2, 1)"
+	"(0, 0, 1, 0, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 0, 1, 1)" -> "(1, 0, 1, 1, 2, 1)"
+	"(0, 0, 1, 0, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 0, 1, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 0, 1, 2)" -> "(2, 0, 1, 1, 2, 1)"
+	"(0, 0, 1, 0, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 1, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 0, 2, 0)" -> "(0, 0, 1, 1, 2, 2)"
+	"(0, 0, 1, 0, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 0, 1, 1, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 0, 2, 2)" -> "(2, 0, 1, 1, 2, 2)"
+	"(0, 0, 1, 1, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 0, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 1, 0, 0)" -> "(0, 0, 1, 0, 0, 0)"
+	"(0, 0, 1, 1, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 0, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 1, 0, 1)" -> "(1, 0, 1, 0, 0, 0)"
+	"(0, 0, 1, 1, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 1, 1, 0)" -> "(0, 0, 1, 0, 0, 1)"
+	"(0, 0, 1, 1, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 1, 1, 1)" -> "(1, 0, 1, 0, 0, 1)"
+	"(0, 0, 1, 1, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 0, 1, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 1, 1, 2)" -> "(2, 0, 1, 0, 0, 1)"
+	"(0, 0, 1, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 1, 2, 0)" -> "(0, 0, 1, 0, 0, 2)"
+	"(0, 0, 1, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 1, 2, 1)" -> "(1, 0, 1, 0, 0, 2)"
+	"(0, 0, 1, 1, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 0, 1, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 0, 1, 1, 2, 2)" -> "(2, 0, 1, 0, 0, 2)"
+	"(0, 1, 0, 0, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 0, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 0, 0)" -> "(0, 1, 1, 0, 1, 0)"
+	"(0, 1, 0, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 1, 0, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 0, 1)" -> "(1, 1, 1, 0, 1, 0)"
+	"(0, 1, 0, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 1, 0, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 0, 2)" -> "(2, 1, 1, 0, 1, 0)"
+	"(0, 1, 0, 0, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 0, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 1, 0)" -> "(0, 1, 1, 0, 1, 1)"
+	"(0, 1, 0, 0, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 1, 0, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 1, 1)" -> "(1, 1, 1, 0, 1, 1)"
+	"(0, 1, 0, 0, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 1, 0, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 1, 2)" -> "(2, 1, 1, 0, 1, 1)"
+	"(0, 1, 0, 0, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 0, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 2, 0)" -> "(0, 1, 1, 0, 1, 2)"
+	"(0, 1, 0, 0, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 1, 0, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 2, 1)" -> "(1, 1, 1, 0, 1, 2)"
+	"(0, 1, 0, 0, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 1, 0, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 2, 2)" -> "(2, 1, 1, 0, 1, 2)"
+	"(0, 1, 0, 1, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 1, 0, 0)" -> "(0, 1, 1, 1, 2, 0)"
+	"(0, 1, 0, 1, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 1, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 1, 0, 1)" -> "(1, 1, 1, 1, 2, 0)"
+	"(0, 1, 0, 1, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 1, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 1, 0, 2)" -> "(2, 1, 1, 1, 2, 0)"
+	"(0, 1, 0, 1, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 1, 1, 0)" -> "(0, 1, 1, 1, 2, 1)"
+	"(0, 1, 0, 1, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 1, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 1, 1, 1)" -> "(1, 1, 1, 1, 2, 1)"
+	"(0, 1, 0, 1, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 1, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 1, 1, 2)" -> "(2, 1, 1, 1, 2, 1)"
+	"(0, 1, 0, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 1, 2, 0)" -> "(0, 1, 1, 1, 2, 2)"
+	"(0, 1, 0, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 1, 1, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 1, 2, 1)" -> "(1, 1, 1, 1, 2, 2)"
+	"(0, 1, 1, 0, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 0, 0, 0)" -> "(0, 1, 0, 0, 0, 0)"
+	"(0, 1, 1, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 0, 0, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 0, 0, 2)" -> "(2, 1, 0, 0, 0, 0)"
+	"(0, 1, 1, 0, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 0, 1, 0)" -> "(0, 1, 0, 0, 0, 1)"
+	"(0, 1, 1, 0, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 0, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 0, 1, 1)" -> "(1, 1, 0, 0, 0, 1)"
+	"(0, 1, 1, 0, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 0, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 0, 1, 2)" -> "(2, 1, 0, 0, 0, 1)"
+	"(0, 1, 1, 0, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 0, 2, 0)" -> "(0, 1, 0, 0, 0, 2)"
+	"(0, 1, 1, 0, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 0, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 0, 2, 1)" -> "(1, 1, 0, 0, 0, 2)"
+	"(0, 1, 1, 0, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 0, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 0, 2, 2)" -> "(2, 1, 0, 0, 0, 2)"
+	"(0, 1, 1, 1, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 1, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 0, 0)" -> "(0, 1, 0, 1, 1, 0)"
+	"(0, 1, 1, 1, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 0, 1, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 0, 1)" -> "(1, 1, 0, 1, 1, 0)"
+	"(0, 1, 1, 1, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 0, 1, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 0, 2)" -> "(2, 1, 0, 1, 1, 0)"
+	"(0, 1, 1, 1, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 1, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 1, 0)" -> "(0, 1, 0, 1, 1, 1)"
+	"(0, 1, 1, 1, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 0, 1, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 1, 1)" -> "(1, 1, 0, 1, 1, 1)"
+	"(0, 1, 1, 1, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 0, 1, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 1, 2)" -> "(2, 1, 0, 1, 1, 1)"
+	"(0, 1, 1, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 1, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 2, 0)" -> "(0, 1, 0, 1, 1, 2)"
+	"(0, 1, 1, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 0, 1, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 2, 1)" -> "(1, 1, 0, 1, 1, 2)"
+	"(0, 1, 1, 1, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 0, 1, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 2, 2)" -> "(2, 1, 0, 1, 1, 2)"
+	"(1, 0, 0, 0, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 0, 0, 0)" -> "(0, 1, 0, 1, 2, 0)"
+	"(1, 0, 0, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 0, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 0, 0, 1)" -> "(1, 1, 0, 1, 2, 0)"
+	"(1, 0, 0, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 0, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 0, 0, 2)" -> "(2, 1, 0, 1, 2, 0)"
+	"(1, 0, 0, 0, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 0, 1, 0)" -> "(0, 1, 0, 1, 2, 1)"
+	"(1, 0, 0, 0, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 0, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 0, 1, 1)" -> "(1, 1, 0, 1, 2, 1)"
+	"(1, 0, 0, 0, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 0, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 0, 1, 2)" -> "(2, 1, 0, 1, 2, 1)"
+	"(1, 0, 0, 0, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 0, 1, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 0, 2, 1)" -> "(1, 1, 0, 1, 2, 2)"
+	"(1, 0, 0, 0, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 0, 1, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 0, 2, 2)" -> "(2, 1, 0, 1, 2, 2)"
+	"(1, 0, 0, 1, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 1, 0, 0)" -> "(0, 1, 0, 0, 0, 0)"
+	"(1, 0, 0, 1, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 0, 0, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 1, 0, 2)" -> "(2, 1, 0, 0, 0, 0)"
+	"(1, 0, 0, 1, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 1, 1, 0)" -> "(0, 1, 0, 0, 0, 1)"
+	"(1, 0, 0, 1, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 0, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 1, 1, 1)" -> "(1, 1, 0, 0, 0, 1)"
+	"(1, 0, 0, 1, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 0, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 1, 1, 2)" -> "(2, 1, 0, 0, 0, 1)"
+	"(1, 0, 0, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 0, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 1, 2, 0)" -> "(0, 1, 0, 0, 0, 2)"
+	"(1, 0, 0, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 0, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 1, 2, 1)" -> "(1, 1, 0, 0, 0, 2)"
+	"(1, 0, 0, 1, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 0, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 0, 1, 2, 2)" -> "(2, 1, 0, 0, 0, 2)"
+	"(1, 0, 1, 0, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 0, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 0, 0, 0)" -> "(0, 1, 1, 0, 1, 0)"
+	"(1, 0, 1, 0, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 1, 0, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 0, 0, 1)" -> "(1, 1, 1, 0, 1, 0)"
+	"(1, 0, 1, 0, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 1, 0, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 0, 0, 2)" -> "(2, 1, 1, 0, 1, 0)"
+	"(1, 0, 1, 0, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 0, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 0, 1, 0)" -> "(0, 1, 1, 0, 1, 1)"
+	"(1, 0, 1, 0, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 1, 0, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 0, 1, 1)" -> "(1, 1, 1, 0, 1, 1)"
+	"(1, 0, 1, 0, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 1, 0, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 0, 1, 2)" -> "(2, 1, 1, 0, 1, 1)"
+	"(1, 0, 1, 0, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 0, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 0, 2, 0)" -> "(0, 1, 1, 0, 1, 2)"
+	"(1, 0, 1, 0, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 1, 0, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 0, 2, 1)" -> "(1, 1, 1, 0, 1, 2)"
+	"(1, 0, 1, 0, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 1, 0, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 0, 2, 2)" -> "(2, 1, 1, 0, 1, 2)"
+	"(1, 0, 1, 1, 0, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 1, 0, 0)" -> "(0, 1, 1, 1, 2, 0)"
+	"(1, 0, 1, 1, 0, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 1, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 1, 0, 1)" -> "(1, 1, 1, 1, 2, 0)"
+	"(1, 0, 1, 1, 0, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 1, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 1, 0, 2)" -> "(2, 1, 1, 1, 2, 0)"
+	"(1, 0, 1, 1, 1, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 1, 1, 0)" -> "(0, 1, 1, 1, 2, 1)"
+	"(1, 0, 1, 1, 1, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 1, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 1, 1, 1)" -> "(1, 1, 1, 1, 2, 1)"
+	"(1, 0, 1, 1, 1, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(2, 1, 1, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 1, 1, 2)" -> "(2, 1, 1, 1, 2, 1)"
+	"(1, 0, 1, 1, 2, 0)" [fillcolor=lightblue shape=circle style=filled]
+	"(0, 1, 1, 1, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 1, 2, 0)" -> "(0, 1, 1, 1, 2, 2)"
+	"(1, 0, 1, 1, 2, 1)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 1, 1, 1, 2, 2)" [fillcolor=lightblue shape=circle style=filled]
+	"(1, 0, 1, 1, 2, 1)" -> "(1, 1, 1, 1, 2, 2)"
+}
