@@ -261,14 +261,20 @@ for pv_template in itertools.product([0, 1], repeat=8):
     zero = tuple([0] * len(pv_template))
     minus_one = tuple([2 if b == 1 else 1 for b in pv_template])
 
+    number_of_fixpoints = 0
+
+    for node in next_of_pv:
+        if next_of_pv[node] == node:
+            number_of_fixpoints += 1
+
     print(
         pv_template,
-        # len(node_to_component[zero]),
+        number_of_fixpoints,
         # min([len(c) for c in components]),
         # is_power_of_two(len(node_to_component[zero])),
         # len(node_to_component[zero]) == len(node_to_component[minus_one]),
-        len(node_to_component[zero]) == min([len(c) for c in components]),
-        is_power_of_two(len(node_to_component[zero])),
+        # len(node_to_component[zero]) == min([len(c) for c in components]),
+        # is_power_of_two(len(node_to_component[zero])),
     )
 
 # There is a pattern of when the class of 0 is the smallest class
