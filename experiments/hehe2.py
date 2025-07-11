@@ -65,12 +65,35 @@ class ValuedArrow(object):
             return "↙"
         return None
 
+    def opp_varrow(self):
+        return ValuedArrow(ValuedArrow.opp(self.arrow), self.value)
+
+    @staticmethod
+    def value_space(arrow):
+        varrow = ValuedArrow(arrow, 0)
+        if varrow.is_horizontal():
+            return [0, 1]
+        if varrow.is_vertical():
+            return [0, 1, 2]
+        return [0, 1, 2, 3, 4, 5]
+
     def __init__(self, arrow, value):
         if arrow not in ["→", "←", "↓", "↑", "↘", "↖", "↙", "↗"]:
             raise ValueError("Arrow not valid")
         self.arrow = arrow
         self.value = value
         self.varrow = (arrow, value)
+
+    def to_tuple(self):
+        return (self.arrow, self.value)
+
+    def __hash__(self):
+        return hash(self.to_tuple())
+
+    def __eq__(self, other):
+        if isinstance(other, ValuedArrow):
+            return self.to_tuple() == other.to_tuple()
+        return NotImplemented
 
     def is_diagonal(self) -> bool:
         return self.arrow in ["↘", "↖", "↙", "↗"]
@@ -109,6 +132,11 @@ class ValuedArrow(object):
 
     def __repr__(self):
         return str(self)
+
+    def __lt__(self, other):
+        if isinstance(other, ValuedArrow):
+            return self.to_tuple() < other.to_tuple()
+        return NotImplemented
 
     def func(self):
         if self.arrow in ["←", "→"]:
@@ -156,6 +184,13 @@ class ValuedPath(object):
         else:
             self.valued_path = valued_path
 
+    @staticmethod
+    def from_arrows_and_valuation(arrows, valuation):
+        if len(arrows) != len(valuation):
+            raise ValueError("Arrows and valuation must have the same length")
+        valued_path = tuple(map(lambda a, v: ValuedArrow(a, v), arrows, valuation))
+        return ValuedPath(valued_path)
+
     def values(self):
         return [t.value for t in self.valued_path]
 
@@ -171,6 +206,22 @@ class ValuedPath(object):
         return ValuedPath(
             tuple(map(lambda x: ("←", 0) if x == 0 else ("↙", 4), pv.parity_vector))
         )
+
+    def to_tuple(self):
+        return tuple((va.arrow, va.value) for va in self.valued_path)
+
+    def __hash__(self):
+        return hash(self.to_tuple())
+
+    def __eq__(self, other):
+        if isinstance(other, ValuedPath):
+            return self.to_tuple() == other.to_tuple()
+        return NotImplemented
+
+    def __lt__(self, other):
+        if isinstance(other, ValuedPath):
+            return self.to_tuple() < other.to_tuple()
+        return NotImplemented
 
     def func(self):
         new_f = self.valued_path[0].func()
@@ -222,7 +273,7 @@ class ValuedPath(object):
             east = world.world[tile_coord][world.EAST]
             value = crt(south, east, 2, 3)
 
-        return next_vap, ValuedArrow(ValuedArrow.opp(arrow), value)
+        return next_vap, ValuedArrow(arrow, value)
 
 
 def tile_id_to_sides(tile_id):
