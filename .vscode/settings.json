@@ -8,7 +8,7 @@
     "editor.quickSuggestions": false,
     "editor.parameterHints.enabled": false,
     "editor.hover.enabled": false,
-    "editor.suggestOnTriggerCharacters": false,
+    //"editor.suggestOnTriggerCharacters": false,
     "editor.wordBasedSuggestions": false,
-    "editor.inlineSuggest.enabled": false,
+    //"editor.inlineSuggest.enabled": false,
 }
