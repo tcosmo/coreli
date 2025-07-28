@@ -184,6 +184,27 @@ class ValuedPath(object):
         else:
             self.valued_path = valued_path
 
+    def rotate(self, n: int = 1) -> "ValuedPath":
+        def rotate_list(l, n):
+            sign = -1 if n < 0 else 1
+            n = sign * (abs(n) % len(l))
+            return l[n:] + l[:n]
+
+        
+        rotated_vap = rotate_list(self.valued_path, n)
+        
+        return ValuedPath(tuple(rotated_vap))
+
+    def cycle(self) -> list[int]:
+        from copy import deepcopy
+        fp = self.func_fixpoint()[1]
+        vap = deepcopy(self)
+        to_ret = [fp]
+        for _ in range(len(vap.valued_path)):
+            vap = vap.rotate()
+            to_ret.append(vap.func_fixpoint()[1])
+        return to_ret[:-1]
+
     @staticmethod
     def from_arrows_and_valuation(arrows, valuation):
         if len(arrows) != len(valuation):
@@ -228,6 +249,12 @@ class ValuedPath(object):
         for va in self.valued_path[1:]:
             new_f = va.func().subs(self.x, new_f)
         return new_f
+
+    def func_fixpoint(self):
+        f = self.func()
+        B = f.subs(self.x, 0)
+        A = f.subs(self.x, 1) - B
+        return (A, B / (1 - A))
 
     def __str__(self):
         return str(self.valued_path)
