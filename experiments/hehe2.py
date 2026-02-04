@@ -107,6 +107,9 @@ class ValuedArrow(object):
     def height(self) -> int:
         return -1 * self.get_move()[1]
 
+    def width(self) -> int:
+        return -1*self.get_move()[0]
+
     def get_move(self) -> tuple[int, int]:  # x,y
         if self.arrow == "→":
             return (1, 0)
@@ -267,6 +270,9 @@ class ValuedPath(object):
 
     def height(self):
         return sum([a.height() for a in self.valued_path])
+
+    def width(self):
+        return sum([a.width() for a in self.valued_path])
 
     def next_cyclic_vap(self, arrow):
         extended_vap = deepcopy(self)
@@ -439,6 +445,15 @@ class World(object):
 
     def place_initial_valued_path(self, vap: ValuedPath):
         curr_pos = (0, 0)
+        for valued_arrow in vap.valued_path:
+            (dx, dy) = valued_arrow.get_move()
+            self.place_arrow(
+                valued_arrow, self.tile_coordinate_of_arrow(curr_pos, valued_arrow)
+            )
+            curr_pos = (curr_pos[0] + dx, curr_pos[1] + dy)
+
+    def place_valued_path(self, vap: ValuedPath, origin=(0,0)):
+        curr_pos = origin
         for valued_arrow in vap.valued_path:
             (dx, dy) = valued_arrow.get_move()
             self.place_arrow(
