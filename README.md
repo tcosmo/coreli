@@ -12,7 +12,25 @@ The **Collatz Conjecture**, unresolved since the 60s, states that, any stritcly 
 
 The appararent simplicity of this problem hides a very difficult mathematical problem. Actually, we believe that this problem has a lot to do with **Computer Science**. That's why we created **Coreli**, a library for experimenting and testing hypothesises regarding the Collatz process.      
 
-# Doc
+
+
+## Install
+
+```
+pip install coreli
+```
+
+Or for development:
+
+```
+git clone https://github.com/tcosmo/coreli
+cd coreli
+python3.12 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Doc
 
 Coreli's doc is [hosted here](https://dna.hamilton.ie/tsterin/coreli/docs/).
 
