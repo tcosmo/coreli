@@ -3,7 +3,7 @@
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "python.formatting.provider": "none",
-    "editor.hover.enabled": false,
+    "editor.hover.enabled": "off",
     "editor.quickSuggestions": {
         "comments": "off",
         "strings": "off",
