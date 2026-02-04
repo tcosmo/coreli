@@ -1,14 +1,19 @@
 import setuptools
+from pathlib import Path
 
-with open("README.md", "r") as fh:
+here = Path(__file__).parent.resolve()
+
+with open(here / "README.md", "r") as fh:
     long_description = fh.read()
 
-with open("requirements.txt", "r") as fh:
-    install_requires = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
+with open(here / "requirements.txt", "r") as fh:
+    install_requires = [
+        line.strip() for line in fh if line.strip() and not line.startswith("#")
+    ]
 
 setuptools.setup(
     name="coreli",
-    version="0.0.7",
+    version="0.0.9",
     author="Tristan Stérin",
     author_email="tristan.sterin@mu.ie",
     description="The Collatz Research Library provides tools for experimenting and testing hypothesises related to the Collatz Process.",
